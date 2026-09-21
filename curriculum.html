@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Start Montessori - CS Unplugged Teacher & Admin Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .nav-tab-active { border-bottom: 3px solid #f59e0b; color: #fef3c7; font-weight: 700; background-color: rgba(255,255,255,0.08); }
+    .page-section { display: none; }
+    .page-section.active { display: block; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+  <!-- Header & Main Site Navigation -->
+  <header class="bg-emerald-900 text-white shadow-xl sticky top-0 z-50 border-b-4 border-amber-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Info -->
+        <div class="flex items-center space-x-3">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-emerald-300 hidden md:inline">Smart Start Montessori</span>
+            </div>
+            <h1 class="text-lg md:text-xl font-extrabold tracking-tight text-white">CS Unplugged Educator Hub</h1>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-1 text-sm font-medium">
+          <button onclick="switchTab('index')" id="tab-home" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
+            <i class="fa-solid fa-house mr-1.5 text-xs"></i>Home
+          </button>
+          <button onclick="switchTab('curriculum')" id="tab-curriculum" class="nav-tab-active px-3 py-2 rounded-t-lg transition hover:bg-emerald-800">
+            <i class="fa-solid fa-book-open mr-1.5 text-xs"></i>Scope & Sequence
+          </button>
+          <button onclick="switchTab('assessment')" id="tab-assessment" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
+            <i class="fa-solid fa-chart-line mr-1.5 text-xs"></i>Assessment Guide
+          </button>
+          <!-- <button onclick="switchTab('tc-integration')" id="tab-tc-integration" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
+            <i class="fa-solid fa-folder-tree mr-1.5 text-xs"></i>Transparent Classroom
+          </button>
+          <button onclick="switchTab('digital-bridge')" id="tab-digital-bridge" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
+            <i class="fa-solid fa-code mr-1.5 text-xs"></i>Scratch & Bridge
+          </button>
+          <button onclick="switchTab('logistics')" id="tab-logistics" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
+            <i class="fa-solid fa-boxes-packing mr-1.5 text-xs"></i>Hardware & Admin
+          </button> -->
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden">
+          <button onclick="toggleMobileMenu()" class="p-2 rounded-md text-emerald-200 hover:text-white hover:bg-emerald-800 focus:outline-none">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-emerald-950 border-t border-emerald-800 px-4 py-3 space-y-2 text-sm font-medium">
+      <button onclick="switchTab('index')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Home / Dashboard</button>
+      <button onclick="switchTab('curriculum')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Scope & Sequence</button>
+      <button onclick="switchTab('assessment')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Student Assessment Guide</button>
+      <!-- <button onclick="switchTab('tc-integration')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Transparent Classroom Setup</button>
+      <button onclick="switchTab('digital-bridge')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Scratch & Applied Coding Bridge</button>
+      <button onclick="switchTab('logistics')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Hardware & Admin Resources</button> -->
+    </div>
+  </header>
+
+  <!-- Main Content Body -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full">
+
+    <!-- ================= PAGE 2: SCOPE & SEQUENCE ================= -->
+    <section id="page-curriculum" class="page-section active space-y-8">
+      
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+        <h2 class="text-2xl font-bold text-slate-900 mb-2">CS Unplugged Scope & Sequence (24-Week Dual-Track Matrix)</h2>
+        <p class="text-slate-600 text-sm mb-6">
+          Organized into three 8-week phases with dedicated, parallel activities for both Primary (3–6) and Elementary (6–12) classrooms every week.
+        </p>
+
+        <!-- Phase Tabs -->
+        <div class="grid md:grid-cols-3 gap-4 mb-6">
+          <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-xl">
+            <span class="text-xs font-bold uppercase text-emerald-800 bg-emerald-200 px-2 py-0.5 rounded">Phase 1 • Fall</span>
+            <h3 class="font-bold text-emerald-950 mt-2 text-base">Algorithms & Procedures</h3>
+            <p class="text-xs text-slate-600 mt-1">Parallels Great Lesson 1 (Laws of Universe). Focuses on sequencing, literal instructions, and debugging.</p>
+          </div>
+          <div class="bg-blue-50 border border-blue-200 p-4 rounded-xl">
+            <span class="text-xs font-bold uppercase text-blue-800 bg-blue-200 px-2 py-0.5 rounded">Phase 2 • Winter</span>
+            <h3 class="font-bold text-blue-950 mt-2 text-base">Data Representation</h3>
+            <p class="text-xs text-slate-600 mt-1">Parallels Great Lessons 2 & 3 (Life & Human Tools). Base-2 binary, pixel graphics, and data compression.</p>
+          </div>
+          <div class="bg-purple-50 border border-purple-200 p-4 rounded-xl">
+            <span class="text-xs font-bold uppercase text-purple-800 bg-purple-200 px-2 py-0.5 rounded">Phase 3 • Spring</span>
+            <h3 class="font-bold text-purple-950 mt-2 text-base">Information Theory & Security</h3>
+            <p class="text-xs text-slate-600 mt-1">Parallels Great Lessons 4 & 5 (Writing & Numerals). Sorting networks, parity error checking, and ciphers.</p>
+          </div>
+        </div>
+
+        <!-- Curriculum Table -->
+        <div class="overflow-x-auto border border-slate-200 rounded-xl">
+          <table class="w-full text-left text-sm border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-700 uppercase text-xs font-bold tracking-wider border-b">
+                <th class="p-3">Weeks & Dates</th>
+                <th class="p-3">Primary Focus (Ages 3–6)</th>
+                <th class="p-3">Elementary Focus (Ages 6–12)</th>
+                <th class="p-3">Core CS Concept</th>
+                <th class="p-3">Montessori Connection</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-emerald-800">W1 (Oct 5–9)</td>
+                <td class="p-3 font-bold text-slate-800">Kidbots Floor Grid (Simple 3x3 paths)</td>
+                <td class="p-3 font-bold text-slate-800">Jam Sandwich Robot (Literal Syntax)</td>
+                <td class="p-3">Algorithms & Sequencing</td>
+                <td class="p-3">Practical Life (Spatial Order)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-emerald-800">W2 (Oct 12–16)</td>
+                <td class="p-3 font-bold text-slate-800">Cup Stacking Code (Color-coded height stacks)</td>
+                <td class="p-3 font-bold text-slate-800">Rescue Mission (Marching Orders & Functions)</td>
+                <td class="p-3">Loops & Optimization</td>
+                <td class="p-3">Sensorial (Grading Towers)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-emerald-800">W3 (Oct 19–23)</td>
+                <td class="p-3 font-bold text-slate-800">Handwashing Algorithm (Sequenced picture cards)</td>
+                <td class="p-3 font-bold text-slate-800">Plant a Seed Flowchart (Decomposition)</td>
+                <td class="p-3">Decomposition & Flowcharts</td>
+                <td class="p-3">Botany & Grace/Courtesy</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-emerald-800">W4 (Oct 26–30)</td>
+                <td class="p-3 font-bold text-slate-800">Button Sorting Algorithm (Attributes & Sorting)</td>
+                <td class="p-3 font-bold text-slate-800">Battleship Coordinate Algorithmic Mapping</td>
+                <td class="p-3">Conditional Logic & Grids</td>
+                <td class="p-3">Sensorial Sorting</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-emerald-800">W5 (Nov 2–6)</td>
+                <td class="p-3 font-bold text-slate-800">Line Follower Tape Practice (Tactile paths)</td>
+                <td class="p-3 font-bold text-slate-800">ScratchJr Block Sequencing Intro</td>
+                <td class="p-3">Visual Block Execution</td>
+                <td class="p-3">Geometry & Movement</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-emerald-800">W6 (Nov 9–13)</td>
+                <td class="p-3 font-bold text-slate-800">Classroom Object Search Algorithm</td>
+                <td class="p-3 font-bold text-slate-800">ScratchJr Interactive Story Coding</td>
+                <td class="p-3">Triggers & Events</td>
+                <td class="p-3">Language Storytelling</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-emerald-800">W7 (Nov 16–20)</td>
+                <td class="p-3 font-bold text-slate-800">Animal Movement Step Patterns</td>
+                <td class="p-3 font-bold text-slate-800">Debug the Broken Recipe Code</td>
+                <td class="p-3">Debugging & Error Finding</td>
+                <td class="p-3">Practical Life Checking</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-emerald-800">W8 (Nov 23–27)</td>
+                <td class="p-3 font-bold text-slate-800">Thanksgiving Feast Step Sequencing</td>
+                <td class="p-3 font-bold text-slate-800">Algorithm Efficiency Challenge (Shortest path)</td>
+                <td class="p-3">Algorithmic Efficiency</td>
+                <td class="p-3">Cultural & Practical Life</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-blue-800">W9 (Nov 30–Dec 4)</td>
+                <td class="p-3 font-bold text-slate-800">Binary Dot Counting (1 and 2 dots)</td>
+                <td class="p-3 font-bold text-slate-800">Binary Cards & Base-2 System (1 to 31)</td>
+                <td class="p-3">Binary Digits (Bits)</td>
+                <td class="p-3">Math: Stamp Game & Beads</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-blue-800">W10 (Dec 7–11)</td>
+                <td class="p-3 font-bold text-slate-800">Light/Dark Color Sorting Grid</td>
+                <td class="p-3 font-bold text-slate-800">Image Representation (5x5 Pixel Art Grids)</td>
+                <td class="p-3">Bitmaps & Pixel Encodings</td>
+                <td class="p-3">Geometry & Art Grids</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-blue-800">W11 (Dec 14–18)</td>
+                <td class="p-3 font-bold text-slate-800">Binary Bead Stringing (Simple ON/OFF)</td>
+                <td class="p-3 font-bold text-slate-800">Binary Bracelets (5-bit Initial Encoding)</td>
+                <td class="p-3">Character Encoding</td>
+                <td class="p-3">Sensorial Fine Motor</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-blue-800">W12 (Jan 4–8)</td>
+                <td class="p-3 font-bold text-slate-800">Pattern Block Image Reconstruction</td>
+                <td class="p-3 font-bold text-slate-800">Run-Length Encoding (Text Compression)</td>
+                <td class="p-3">Lossless Compression</td>
+                <td class="p-3">Language Shorthand</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-blue-800">W13 (Jan 11–15)</td>
+                <td class="p-3 font-bold text-slate-800">Secret Symbol Matching Cards</td>
+                <td class="p-3 font-bold text-slate-800">ASCII Text Translation Worksheets</td>
+                <td class="p-3">Standard Data Tables</td>
+                <td class="p-3">Language Symbol Work</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-blue-800">W14 (Jan 18–22)</td>
+                <td class="p-3 font-bold text-slate-800">Tablet Pixel Coloring App</td>
+                <td class="p-3 font-bold text-slate-800">Scratch Pixel Art Drawer Project</td>
+                <td class="p-3">Digital Graphics</td>
+                <td class="p-3">Computer Tech Bridge</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-blue-800">W15 (Jan 25–29)</td>
+                <td class="p-3 font-bold text-slate-800">Secret Message Flip Cards</td>
+                <td class="p-3 font-bold text-slate-800">Secret Cipher Wheels (Data concealment)</td>
+                <td class="p-3">Data Security</td>
+                <td class="p-3">History of Writing</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-blue-800">W16 (Feb 1–5)</td>
+                <td class="p-3 font-bold text-slate-800">Heavy vs. Light Object Weight Sorting</td>
+                <td class="p-3 font-bold text-slate-800">Data Storage Capacity & File Sizes</td>
+                <td class="p-3">Memory Scale</td>
+                <td class="p-3">Sensorial Baric Tablets</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-purple-800">W17 (Feb 8–12)</td>
+                <td class="p-3 font-bold text-slate-800">Indoor Size Grading Rod Sorting</td>
+                <td class="p-3 font-bold text-slate-800">Outdoor Sorting Networks (Part 1)</td>
+                <td class="p-3">Parallel Processing</td>
+                <td class="p-3">Sensorial Number Rods</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-purple-800">W18 (Feb 15–19)</td>
+                <td class="p-3 font-bold text-slate-800">Peer Lineup by Height Sequence</td>
+                <td class="p-3 font-bold text-slate-800">Outdoor Sorting Networks (Part 2 - Timed)</td>
+                <td class="p-3">Sorting Algorithms</td>
+                <td class="p-3">Sensorial Cylinders</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-purple-800">W19 (Feb 22–26)</td>
+                <td class="p-3 font-bold text-slate-800">Missing Object Guessing Game (Linear Search)</td>
+                <td class="p-3 font-bold text-slate-800">20 Questions: Linear vs. Binary Search</td>
+                <td class="p-3">Search Algorithms</td>
+                <td class="p-3">Sensorial Mystery Bag</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-purple-800">W20 (Mar 1–5)</td>
+                <td class="p-3 font-bold text-slate-800">Spot the Difference Picture Puzzles</td>
+                <td class="p-3 font-bold text-slate-800">Parity Magic: Error Detection Checksums</td>
+                <td class="p-3">Error Checksum Bits</td>
+                <td class="p-3">Math Odd/Even Control</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-purple-800">W21 (Mar 8–12)</td>
+                <td class="p-3 font-bold text-slate-800">Secret Code Stamp Matching</td>
+                <td class="p-3 font-bold text-slate-800">Caesar Cipher & Modulo Math Encryption</td>
+                <td class="p-3">Cryptography</td>
+                <td class="p-3">History of Alphabet</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-purple-800">W22 (Mar 15–19)</td>
+                <td class="p-3 font-bold text-slate-800">Robot Maze Obstacle Course Walk</td>
+                <td class="p-3 font-bold text-slate-800">Scratch Conditionals & Sensor Lab</td>
+                <td class="p-3">Conditional Statements</td>
+                <td class="p-3">Practical Life Movement</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-purple-800">W23 (Mar 22–26)</td>
+                <td class="p-3 font-bold text-slate-800">Eco-Sorting Recycle Bin Sort</td>
+                <td class="p-3 font-bold text-slate-800">Eco-Sorter Scratch Capstone Project</td>
+                <td class="p-3">Applied Capstone Design</td>
+                <td class="p-3">Biology & Stewardship</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-purple-800">W24 (Apr 5–9)</td>
+                <td class="p-3 font-bold text-slate-800">Plant Growth Sequencing Cards</td>
+                <td class="p-3 font-bold text-slate-800">Smart Garden Python / Scratch Tracker</td>
+                <td class="p-3">Capstone Integration</td>
+                <td class="p-3">Botany & Nature Science</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+      <p>© 2026 Smart Start Montessori • CS Unplugged Educator & Admin Reference Site</p>
+      <p class="text-slate-500">Hosted via GitHub Pages • Designed for Multi-Age Montessori Classrooms (Ages 3–12)</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Tab Switching and Interaction -->
+  <script>
+    function switchTab(tabId) { 
+      // Navigate to page
+      window.location.href = `./${tabId}.html`;
+    }
+
+    function toggleMobileMenu() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu) {
+        mobileMenu.classList.toggle('hidden');
+      }
+    }
+  </script>
+
+</body>
+</html>
