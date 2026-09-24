@@ -1,0 +1,863 @@
+{
+    "w1": {
+        "week": "Week 1",
+        "activityName": "The Jam Sandwich Robot",
+        "bigIdea": "Computers strictly execute literal instructions without human intuition or context. Algorithms must be completely unambiguous.",
+        "setupPrep": "Set up a clean demonstration table at the front of the circle rug. Unpack bread, a jar of jam with the lid tightly closed, a butter knife, and plates. Prepare paper clipboards for Upper Elementary coders.",
+        "keyMaterials": [
+            "1 loaf of sliced bread",
+            "1 jar of jam (sealed)",
+            "1 butter knife & paper plates",
+            "Paper & pencils (Elementary)",
+            "Command Cards (Primary)"
+        ],
+        "title": "The Great Story & The Jam Sandwich Robot",
+        "concept": "Human Robots & Sequential Logic",
+        "montessori": "Practical Life (Grace & Courtesy, Sequence of Work)",
+        "primaryDesc": "1-step physical actions; physically perform step before giving command to Teacher Robot.",
+        "elementaryDesc": "Pair work writing precise written algorithm on paper prior to live testing on Teacher Robot.",
+        "steps": [
+            "Gather students on the circle rug and tell the Great Story of how humans communicate with computers.",
+            "Introduce the 'Teacher Robot' who only understands literal, step-by-step commands.",
+            "Place bread, butter, and jam on the table. Ask Primary students to give one physical command at a time.",
+            "Have Upper El students write down a 5-step sandwich algorithm before testing it on the robot.",
+            "Observe as the Robot follows instructions literally (e.g., placing unopened jam jar on top of bread if 'put jam on bread' is commanded)."
+        ],
+        "controlOfError": "Literal execution by the Teacher Robot. If an instruction is missing 'open the lid', the robot attempts to spread the sealed jar, making the bug immediately obvious without teacher correction.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/kidbots/",
+        "resources": [
+            {
+                "title": "Command Card PDF",
+                "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=jBdofnj3KnA",
+        "imagePlaceholder": "https://placehold.co/600x337/10b981/ffffff?text=Student+Jam+Sandwich+Robot+Demo"
+    },
+    "w2": {
+        "week": "Week 2",
+        "activityName": "Kidbots Floor Grid & Arrow Navigation",
+        "bigIdea": "Algorithms guide spatial movement step-by-step. Directional instructions require precise orientation and unambiguous relative steps.",
+        "setupPrep": "Tape a 3x3 (Primary) and 5x5 (Elementary) grid on the floor using painter's masking tape. Place target objects (plush toy or beanbag) in destination squares. Lay out directional cards.",
+        "keyMaterials": [
+            "Painter's masking tape",
+            "Arrow cards (Forward, Turn Left, Turn Right)",
+            "Destination target objects (beanbags/toys)",
+            "Command layout mats"
+        ],
+        "title": "Kidbots Part 1: The Floor Grid & Arrows",
+        "concept": "Directional Cards & Precise Instructions",
+        "montessori": "Spatial Awareness & Sensorial Orientation",
+        "primaryDesc": "3x3 Floor Grid. Concrete action: place physical arrow cards directly on grid squares ahead of Robot child.",
+        "elementaryDesc": "5x5 Floor Grid. Abstract action: programmer lays out full arrow card sequence on external mat before Robot moves.",
+        "steps": [
+            "Set up a masking-tape floor grid (3x3 for Primary, 5x5 for Elementary) and place a target object in one cell.",
+            "Designate one student as the 'Robot' and another as the 'Programmer'.",
+            "For Primary: The Programmer walks alongside the Robot, placing physical Arrow Cards (Forward, Turn Left, Turn Right) square by square.",
+            "For Elementary: The Programmer creates a sequence on an external Command Mat before sending the Robot on its path.",
+            "Review precision: Ensure turns (90 degrees) happen in-place without moving forward."
+        ],
+        "controlOfError": "The physical grid lines. If the Robot steps off the grid or lands in a blank cell away from the target, the Programmer can re-trace their arrow sequence.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/kidbots/unit-plan/rescue-mission/",
+        "resources": [
+            {
+                "title": "Printable Arrow Cards",
+                "url": "#"
+            },
+            {
+                "title": "Grid Layout Guide",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=IfHmHZPxuV8",
+        "imagePlaceholder": "https://placehold.co/600x337/047857/ffffff?text=Students+Navigating+Floor+Grid+With+Arrow+Cards"
+    },
+    "w3": {
+        "week": "Week 3",
+        "activityName": "Kidbots Obstacles & Debugging",
+        "bigIdea": "Errors ('bugs') are natural in programming; debugging is the systematic process of identifying, isolating, and correcting flawed steps.",
+        "setupPrep": "Maintain floor grids from W2. Place 1 cone on the 3x3 grid and 3 cones on the 5x5 grid. Prepare intentional buggy algorithm cards to test student debugging skills.",
+        "keyMaterials": [
+            "Traffic cones or red felt obstacle pads",
+            "Floor grid tape",
+            "Arrow card sets",
+            "Debugging logs & clipboards"
+        ],
+        "title": "Kidbots Part 2: Obstacles & Debugging",
+        "concept": "Systematic Error Spotting & Debugging",
+        "montessori": "Control of Error & Self-Correction",
+        "primaryDesc": "3x3 Grid with 1 obstacle cone. Physically swap out single incorrect arrow card when robot hits obstacle.",
+        "elementaryDesc": "5x5 Grid with 3 obstacles. Identify bugs in peer sequences and compare two valid paths to determine efficiency.",
+        "steps": [
+            "Introduce obstacle cones or red felt pads on the grid map.",
+            "Intentionally present a faulty arrow card sequence that leads the Robot straight into an obstacle.",
+            "Guide students to 'pause' the robot at the exact step where the error occurs.",
+            "Have students isolate the bad card, replace it with the correct directional card, and resume execution.",
+            "Challenge Upper El students to find the shortest possible algorithm (fewest total steps)."
+        ],
+        "controlOfError": "Physical obstacle cones. Collision with a cone halts the Robot immediately, indicating an error in the current card position.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/kidbots/",
+        "resources": [
+            {
+                "title": "Debugging Log Sheet",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=IfHmHZPxuV8",
+        "imagePlaceholder": "https://placehold.co/600x337/065f46/ffffff?text=Debugging+Kidbot+Paths+in+Classroom"
+    },
+    "w4": {
+        "week": "Week 4",
+        "activityName": "Rescue Mission: Loops & Subroutines",
+        "bigIdea": "Repetition can be compressed using loops and reusable subroutines, making code dramatically more efficient and easier to maintain.",
+        "setupPrep": "Lay out an extended linear grid track on the rug with repeating path sections. Place 'Rescue Target' at the end. Prepare 'Repeat (N)' loop cards and Function mats.",
+        "keyMaterials": [
+            "Extended tape grid tracks",
+            "Repeat loop card blocks (2x, 3x, 4x)",
+            "Function definition cards",
+            "Dry-erase markers & boards"
+        ],
+        "title": "Rescue Mission: Loops, Functions & Algorithmic Efficiency",
+        "concept": "Repeat Commands & Subroutines/Function Blocks",
+        "montessori": "Sensorial Patterns & Math Skip Counting",
+        "primaryDesc": "Physical rhythm: clap or stomp for repeated actions ('Step, Clap, Step, Clap' -> 'Repeat 2 times').",
+        "elementaryDesc": "Re-write 10-step Kidbot path using Repeat Commands and Subroutines/Function Blocks to condense code under 5 total blocks.",
+        "steps": [
+            "Set up a longer grid course with repeating path patterns (e.g., 3 forward steps, or repeating stair patterns).",
+            "Introduce the Repeat Loop card and Function definition mats.",
+            "Demonstrate how 3 'Forward' cards can be represented by a single '3x Forward' loop block.",
+            "Have Elementary students write a Function block on a dry-erase card, then call that function name inside their main algorithm.",
+            "Run the Robot child through the compressed program."
+        ],
+        "controlOfError": "Step counting. If a loop executes 3 times instead of 2, the Robot overshoots the target square on the grid.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/kidbots/unit-plan/rescue-mission/",
+        "resources": [
+            {
+                "title": "Loop & Function Cards",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=IfHmHZPxuV8",
+        "imagePlaceholder": "https://placehold.co/600x337/0f766e/ffffff?text=Rescue+Mission+Loops+And+Functions"
+    },
+    "w5": {
+        "week": "Week 5",
+        "activityName": "Conditional Logic & Floor Decision Branching",
+        "bigIdea": "Conditional logic allows programs to make decisions and adapt execution based on dynamic inputs and environmental states.",
+        "setupPrep": "Place colored felt squares (Red, Blue) at grid decision junctions. Set up IF/THEN/ELSE command cards on stands for programmer reference.",
+        "keyMaterials": [
+            "Colored floor felt squares (Red/Blue/Green)",
+            "IF / THEN / ELSE rule cards",
+            "Floor grid tape",
+            "Decision branching mats"
+        ],
+        "title": "Conditional Logic & Decision Paths",
+        "concept": "If/Then Rules & Floor Branching",
+        "montessori": "Logical Reasoning & Practical Choice Work",
+        "primaryDesc": "Concrete physical rules: 'IF stepping on red mat, THEN turn right, ELSE walk straight forward.'",
+        "elementaryDesc": "Construct floor grid branching paths using IF/THEN/ELSE condition cards and test edge-case choices.",
+        "steps": [
+            "Lay out colored felt squares (Red/Blue) on specific intersection points of the floor grid.",
+            "Introduce 'IF/THEN' logic cards: 'IF on Red square THEN turn Left ELSE turn Right'.",
+            "Send the Robot down the path, requiring them to inspect the floor color before choosing their next step.",
+            "Have Elementary students design branching paths for peer programmers to solve.",
+            "Discuss real-world conditionals (e.g., 'IF it rains THEN grab an umbrella')."
+        ],
+        "controlOfError": "Color-coded path mismatch. Stepping off the intended path indicates a failure to evaluate the IF/THEN condition correctly.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/kidbots/",
+        "resources": [
+            {
+                "title": "Conditional Rules Sheet",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=jBdofnj3KnA",
+        "imagePlaceholder": "https://placehold.co/600x337/115e59/ffffff?text=Conditional+Logic+Floor+Grid"
+    },
+    "w6": {
+        "week": "Week 6",
+        "activityName": "Binary Dot Cards & Base-2 Systems",
+        "bigIdea": "All digital data is built from binary states (ON/OFF, 1/0). Exponential base-2 place values (1, 2, 4, 8, 16) allow representing any integer.",
+        "setupPrep": "Print or construct oversized binary dot cards (1, 2, 4, 8, 16 dots). Arrange student pairs on the rug with individual card sets.",
+        "keyMaterials": [
+            "Oversized binary dot cards (1, 2, 4, 8, 16)",
+            "Student mini dot card sets",
+            "Whiteboards & markers",
+            "Decimal-to-Binary cheat sheets"
+        ],
+        "title": "Binary Numbers Part 1: Dots, Switches & Base-2",
+        "concept": "Card Flips & Binary Systems",
+        "montessori": "Math (Decimal System & Golden Beads)",
+        "primaryDesc": "3 Binary Dot Cards (4, 2, 1); practice counting dots and flipping cards ON (visible) and OFF (blank).",
+        "elementaryDesc": "5 Binary Dot Cards (16, 8, 4, 2, 1); practice place values and count sequentially from 0 to 31 in binary systems.",
+        "steps": [
+            "Demonstrate binary cards with dots (1, 2, 4, 8, 16) arranged in order from right to left.",
+            "Explain the rule: Cards are either face-up (1/ON) or face-down (0/OFF).",
+            "Ask students to flip cards to show specific numbers by adding dot values together.",
+            "Demonstrate binary counting sequences starting from 0 (all down) up to the maximum value.",
+            "Have Upper El write down numbers in binary notation (e.g., 5 = 101)."
+        ],
+        "controlOfError": "Visual dot count verification. Adding up the visible dots confirms whether the correct decimal target number was achieved.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/binary-numbers/",
+        "resources": [
+            {
+                "title": "Printable Binary Dot Cards",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=bdYoX332u9I",
+        "imagePlaceholder": "https://placehold.co/600x337/134e4a/ffffff?text=Binary+Dot+Cards+Base-2"
+    },
+    "w7": {
+        "week": "Week 7",
+        "activityName": "Binary Alphabet & Bead Bracelet Encoding",
+        "bigIdea": "Letters and text are represented in computers by mapping binary numbers to character codes (e.g., 5-bit ASCII-style alphabet codes).",
+        "setupPrep": "Pre-cut string or pipe cleaners. Organize pony beads into two distinct high-contrast colors (e.g., Black=0, White=1). Distribute 5-bit alphabet charts.",
+        "keyMaterials": [
+            "Pony beads in 2 contrasting colors",
+            "Pipe cleaners / elastic cord",
+            "5-Bit Binary Alphabet charts",
+            "Student name encoding worksheets"
+        ],
+        "title": "Binary Numbers Part 2: Binary Alphabet & Counting",
+        "concept": "5-Bit Encoding & Bead Bracelets",
+        "montessori": "Language Work & History of Writing (4th Great Lesson)",
+        "primaryDesc": "Encode first initial using 5 physical black/white tiles or bead sequences.",
+        "elementaryDesc": "Encode 4-letter secret word into 5-Bit ASCII binary encoding; craft bead bracelets and decode peer messages.",
+        "steps": [
+            "Introduce the 5-bit binary alphabet chart linking numbers 1–26 to letters A–Z.",
+            "Provide two colors of beads (e.g., black for 0, white for 1) and stringing wire.",
+            "Guide students to look up their initial/name letters and decode them into 5-bit binary sequences.",
+            "Thread beads sequentially onto wire to create a binary wristband or bookmark.",
+            "Have students swap crafts with a partner to decode each other's hidden messages."
+        ],
+        "controlOfError": "Alphabet chart lookup verification. Decoding a partner's bead pattern yields their actual name or secret word.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/binary-numbers/unit-plan/working-with-binary/",
+        "resources": [
+            {
+                "title": "5-Bit Binary Alphabet Chart",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=bdYoX332u9I",
+        "imagePlaceholder": "https://placehold.co/600x337/1e3a8a/ffffff?text=Binary+Alphabet+Bead+Bracelets"
+    },
+    "w8": {
+        "week": "Week 8",
+        "activityName": "Image Representation: Bitmaps & Pixel Art",
+        "bigIdea": "Digital images are composed of a grid matrix of tiny pixels, where binary numbers dictate shading and color codes for each pixel cell.",
+        "setupPrep": "Print 5x5 (Primary) and 10x10 (Elementary) pixel grid worksheets. Prepare colored pencils or markers matching the palette key.",
+        "keyMaterials": [
+            "Pixel art grid worksheets",
+            "Binary image code sheets",
+            "Colored pencils / markers",
+            "Oversized demo pixel grid"
+        ],
+        "title": "Image Representation: Pixels, Grids & Color by Numbers",
+        "concept": "Bitmaps & Pixel Art",
+        "montessori": "Geometry (Grids & Area) & Visual Grading",
+        "primaryDesc": "3-color palette (0=White, 1=Red, 2=Yellow) 5x5 grid. Copy visual card showing a simple pixel heart directly onto grid.",
+        "elementaryDesc": "5-color palette on 10x10 grid. Decode raw binary code strings line-by-line into bitmaps to reveal hidden pixel art image.",
+        "steps": [
+            "Display a large grid image and explain that digital screens are made up of tiny picture elements called pixels.",
+            "Hand out blank pixel grid sheets and binary pixel maps.",
+            "Explain the rule: 0 = white/light, 1 = black/dark.",
+            "Have students fill in grid cells row by row according to the binary string.",
+            "Introduce color pixel art for Elementary students using numbers (e.g., 1 = Red, 2 = Blue)."
+        ],
+        "controlOfError": "Recognizable picture outcome. Correct pixel shading reveals a distinct image (e.g., heart, star, or smiley face).",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/image-representation/",
+        "resources": [
+            {
+                "title": "Pixel Art Grid Templates",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/1e40af/ffffff?text=Pixel+Art+And+Bitmap+Grids"
+    },
+    "w9": {
+        "week": "Week 9",
+        "activityName": "Data Compression: Run-Length Encoding (RLE)",
+        "bigIdea": "Data compression reduces file size by storing counts of repeated consecutive values rather than recording every individual bit.",
+        "setupPrep": "Prepare side-by-side comparison posters showing uncompressed binary vs. RLE compressed strings (e.g., 4W, 3B, 3W). Print RLE grid worksheets.",
+        "keyMaterials": [
+            "RLE activity worksheets",
+            "Grid paper & colored pencils",
+            "Physical counting beads (Primary)",
+            "Compression ratio calculation sheets"
+        ],
+        "title": "Data Compression: Run-Length Encoding",
+        "concept": "Squeezing Pixel Codes & Compression",
+        "montessori": "Language Shorthand & Math Grouping",
+        "primaryDesc": "Physical bead compression: group 5 identical white beads and place number tag '5' next to single bead.",
+        "elementaryDesc": "10x10 grid challenge using RLE code strings (e.g., 2W, 4B, 2W); squeeze pixel codes and calculate percentage saved.",
+        "steps": [
+            "Compare a full uncompressed binary string (0000111000) with its run-length equivalent (4W, 3B, 3W).",
+            "Explain that Run-Length Encoding (RLE) saves storage by counting repeating data runs.",
+            "Provide RLE code sheets for students to decode onto blank grid paper.",
+            "Have Upper El write their own RLE codes for custom pixel drawings.",
+            "Calculate the compression ratio: count total characters before vs. after compression."
+        ],
+        "controlOfError": "Grid length matching. A correctly decoded RLE line fills the grid row without overflowing or leaving empty cells.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/image-representation/unit-plan/run-length-encoding/",
+        "resources": [
+            {
+                "title": "RLE Compression Worksheets",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/1d4ed8/ffffff?text=Run+Length+Encoding+Data+Compression"
+    },
+    "w10": {
+        "week": "Week 10",
+        "activityName": "Text & Pattern Compression (Dictionary Keys)",
+        "bigIdea": "Text compression replaces repetitive words and patterns with short dictionary keys or pointers, drastically reducing storage footprint.",
+        "setupPrep": "Print nursery rhymes or short stories formatted with high phrase repetition. Prepare symbol/dictionary cards and highlighters.",
+        "keyMaterials": [
+            "Nursery rhyme compression sheets",
+            "Dictionary key cards",
+            "Highlighters (3 colors)",
+            "Calculators (Elementary)"
+        ],
+        "title": "Text & Pattern Compression",
+        "concept": "Dictionary Keys, Pointers & Redundancy Reduction",
+        "montessori": "Language Work & Sentence Analysis",
+        "primaryDesc": "Symbol replacement: substitute recurring story words with physical picture tokens.",
+        "elementaryDesc": "Compress nursery rhymes using dictionary keys, pointers, and redundancy reduction cards.",
+        "steps": [
+            "Sing a familiar song or poem with repeated refrains (e.g., 'Twinkle, Twinkle, Little Star').",
+            "Identify repeating words or phrases and assign them a symbol/dictionary card.",
+            "Replace all occurrences of those phrases in the poem with their symbol cards.",
+            "Have Elementary students build a custom dictionary key for short paragraphs.",
+            "Compare the original character count to the compressed dictionary version."
+        ],
+        "controlOfError": "Reconstruction check. Replacing symbols back with dictionary phrases accurately reads as the complete original text.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/text-compression/",
+        "resources": [
+            {
+                "title": "Text Compression Activity Cards",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/2563eb/ffffff?text=Text+Pattern+Compression+Dictionary"
+    },
+    "w11": {
+        "week": "Week 11",
+        "activityName": "Parity Magic: Error Detection Networks",
+        "bigIdea": "Computers use parity bits (even/odd calculations across matrix rows and columns) to detect when data has been corrupted during transmission.",
+        "setupPrep": "Prepare sets of two-sided magnetic or felt cards (Black on one side, White on the other). Arrange 3x3 or 5x5 grid spaces on magnetic boards or tables.",
+        "keyMaterials": [
+            "Two-sided magnetic/felt cards (Black/White)",
+            "Grid mats (3x3 & 5x5)",
+            "Parity calculation guide sheets"
+        ],
+        "title": "Parity Magic Part 1: Error Detection",
+        "concept": "Even/Odd Grid Matrix Logic",
+        "montessori": "Observation & Pattern Matching",
+        "primaryDesc": "3x3 card grid. Practice counting even/odd pairs of colored cards with teacher guidance.",
+        "elementaryDesc": "5x5 card grid. Set up parity checksum row/column using even/odd grid matrix logic to perform 'magic trick' error detection.",
+        "steps": [
+            "Lay out a grid of black-and-white cards (e.g., 4x4 or 5x5).",
+            "Add an extra row and column ('parity bits') so that every row and column has an EVEN number of black cards.",
+            "Have the demonstrator turn their back while a student flips exactly ONE card.",
+            "Scan row by row and column by column to spot the single row and column with an ODD number of black cards.",
+            "Point to the flipped card at the intersection of the odd row and column!"
+        ],
+        "controlOfError": "Parity count contradiction. The flipped card is guaranteed to be at the exact intersection of the row and column with odd counts.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/",
+        "resources": [
+            {
+                "title": "Parity Cards Set",
+                "url": "#"
+            },
+            {
+                "title": "Parity Magic Guide Sheet",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/3b82f6/ffffff?text=Parity+Magic+Error+Detection"
+    },
+    "w12": {
+        "week": "Week 12",
+        "activityName": "Parity Magic Part 2: Checksums & Data Reliability",
+        "bigIdea": "Checksums and error-correcting codes allow networks to not only detect corrupted data, but automatically pinpoint and fix errors.",
+        "setupPrep": "Set up two 'Network Node' tables separated across the room. Prepare 'Transmission Packet' worksheets with row/column parity counts.",
+        "keyMaterials": [
+            "Transmission packet worksheets",
+            "Barcodes / ISBN sample cards",
+            "Felt/magnetic parity sets",
+            "Red corruption marker cards"
+        ],
+        "title": "Parity Magic Part 2: Checksums & Data Reliability",
+        "concept": "Checksums & Transmission Verification",
+        "montessori": "Self-Correction & Error Fixing",
+        "primaryDesc": "Identify altered card location in a 3x3 guided layout matrix.",
+        "elementaryDesc": "Complete 5x5 self-healing error correction matrix and simulate transmission verification across data networks.",
+        "steps": [
+            "Explain how computers send data across network cables and need to confirm no bits got corrupted.",
+            "Demonstrate simple checksum calculation: adding numbers in a row and appending the total digit to the end.",
+            "Simulate corrupted transmission by changing one digit in a simulated data packet.",
+            "Have students compute the checksum on the receiving end to verify if the data was corrupted.",
+            "Explore real-world check digits on barcodes or product ISBNs."
+        ],
+        "controlOfError": "Checksum discrepancy. If computed checksum != received check digit, data corruption occurred.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/error-detection-and-correction/",
+        "resources": [
+            {
+                "title": "Checksum Calculation Cards",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/60a5fa/ffffff?text=Checksums+Data+Reliability"
+    },
+    "w13": {
+        "week": "Week 13",
+        "activityName": "Linear vs. Binary Search Efficiency",
+        "bigIdea": "Searching sorted data using Binary Search (O(log N)) repeatedly halves the search space, making it exponentially faster than Linear Search (O(N)).",
+        "setupPrep": "Line up 10 (Primary) or 30 (Elementary) numbered plastic cups/cards in numerical order across a long table. Hide a small token under one item.",
+        "keyMaterials": [
+            "30 plastic cups with numbers",
+            "Hidden target tokens",
+            "Stopwatches",
+            "Search step recording charts"
+        ],
+        "title": "Linear vs. Binary Search & Algorithmic Thinking",
+        "concept": "Cup Search & O(log N) Efficiency",
+        "montessori": "Sensorial Gradation & Systematic Ordering",
+        "primaryDesc": "Cup search across 10 cups using physical flips and higher/lower visual prompts.",
+        "elementaryDesc": "Compare linear cup search vs. binary search across 30+ cups, recording total steps and proving O(log N) efficiency.",
+        "steps": [
+            "Arrange numbered cards/cups in sequential order.",
+            "Demonstrate Linear Search: check items one by one from left to right until target is found.",
+            "Demonstrate Binary Search: reveal the middle item. If target is larger/smaller, discard half of remaining set!",
+            "Time and count the steps required for both methods.",
+            "Discuss why Binary Search requires far fewer steps on large ordered datasets."
+        ],
+        "controlOfError": "Target card/object location. Binary Search always isolates the target within ceil(log2 N) steps.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/searching-algorithms/",
+        "resources": [
+            {
+                "title": "Search Algorithm Log Sheet",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/7c3aed/ffffff?text=Linear+vs+Binary+Search+Cup+Game"
+    },
+    "w14": {
+        "week": "Week 14",
+        "activityName": "20 Questions & Decision Tree Classification",
+        "bigIdea": "Decision trees break complex classification problems into a hierarchy of binary YES/NO choices, optimizing search and AI decision-making.",
+        "setupPrep": "Prepare sets of 8 (Primary) or 16-20 (Elementary) animal/object cards. Draw a sample decision tree structure on the whiteboard.",
+        "keyMaterials": [
+            "Animal/object picture cards",
+            "Graph paper for decision trees",
+            "YES/NO branch cards",
+            "Clipboards"
+        ],
+        "title": "20 Questions Algorithmic Search & Decision Trees",
+        "concept": "Classification & Information Theory",
+        "montessori": "Sensorial Classification & Botany/Zoology Taxonomy",
+        "primaryDesc": "Search using 8 visual object cards with pre-drawn visual classification paths.",
+        "elementaryDesc": "Construct binary decision trees for 16–20 items on graph paper, tracing paths with minimal binary questions.",
+        "steps": [
+            "Play 20 Questions to guess a target animal/object.",
+            "Highlight questions that eliminate half the options (e.g., 'Is it a living thing?') versus specific guesses.",
+            "Guide students to build a decision tree diagram branching into YES/NO paths on paper.",
+            "Test decision trees by tracing paths to classify new mystery objects.",
+            "Refine questions to minimize tree depth."
+        ],
+        "controlOfError": "Path tracing leading directly to the single target object at the terminal leaf node.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/searching-algorithms/",
+        "resources": [
+            {
+                "title": "Decision Tree Worksheet",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/6d28d9/ffffff?text=20+Questions+Decision+Trees"
+    },
+    "w15": {
+        "week": "Week 15",
+        "activityName": "Outdoor Sorting Networks (Parallel Processing)",
+        "bigIdea": "Sorting networks process multiple data comparisons simultaneously (in parallel), achieving faster sorting than step-by-step sequential methods.",
+        "setupPrep": "Draw the classic 6-input CS Unplugged Sorting Network on outdoor pavement with sidewalk chalk or tape. Prepare large number cards (1-6).",
+        "keyMaterials": [
+            "Sidewalk chalk / floor line tape",
+            "Large handheld number cards (1–6)",
+            "Sorting network layout diagram",
+            "Whistle or start flag"
+        ],
+        "title": "Sorting Networks Part 1: Outdoor Parallel Processing",
+        "concept": "Floor Grid Spatial Rules & Parallel Processing",
+        "montessori": "Sensorial Grading & Grace and Courtesy",
+        "primaryDesc": "1-digit number cards; navigate outdoor chalk network following node spatial rules.",
+        "elementaryDesc": "Large 2-digit or 3-digit cards; time parallel network sorting with stopwatch to measure algorithm throughput speed.",
+        "steps": [
+            "Draw a CS Unplugged 6-person Sorting Network on the floor using chalk or tape.",
+            "Assign 6 students random number cards and have them stand in the starting circles.",
+            "Students advance simultaneously along lines until they meet at a comparison node.",
+            "At each node, the lower number exits to the left, higher to the right.",
+            "Repeat until all students reach the destination circles sorted in perfect order!"
+        ],
+        "controlOfError": "Destination circle values. Cards are automatically arranged in sorted order (1 to 6) at exit circles.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/sorting-networks/",
+        "resources": [
+            {
+                "title": "Sorting Network Floor Plan PDF",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/5b21b6/ffffff?text=Outdoor+Sorting+Networks+Floor+Grid"
+    },
+    "w16": {
+        "week": "Week 16",
+        "activityName": "Sorting Networks: Parallel vs. Serial Optimization",
+        "bigIdea": "Parallel algorithms leverage multiple concurrent pathways to drastically reduce execution clock time compared to serial single-processor sorting.",
+        "setupPrep": "Set up outdoor sorting network along with a parallel single-lane Bubble Sort station. Assign student timekeepers with stopwatches.",
+        "keyMaterials": [
+            "Sidewalk chalk sorting network",
+            "Stopwatches (2x)",
+            "Handheld number cards",
+            "Parallel vs. Serial comparison worksheets"
+        ],
+        "title": "Sorting Networks Part 2: Network Optimization & Timing",
+        "concept": "Parallel vs. Serial Sorting & Optimization",
+        "montessori": "Reasoning Mind & Critical Thinking",
+        "primaryDesc": "Sort physical objects by size (small, medium, large foam blocks) through outdoor chalk paths.",
+        "elementaryDesc": "Compare Parallel vs. Serial Sorting; reverse sort numbers descending and design custom 4-person network logic.",
+        "steps": [
+            "Time a single student sorting 6 numbers sequentially using Bubble Sort.",
+            "Time 6 students running through the parallel Sorting Network simultaneously.",
+            "Compare total elapsed clock time between parallel vs. serial execution.",
+            "Discuss how multi-core computer processors run tasks in parallel to speed up computation.",
+            "Try reverse sorting (largest to smallest) by flipping node comparison rules."
+        ],
+        "controlOfError": "Stopwatch comparison data showing significantly fewer parallel execution cycles.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/sorting-networks/",
+        "resources": [
+            {
+                "title": "Parallel vs Serial Timing Sheet",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/4c1d95/ffffff?text=Parallel+vs+Serial+Sorting+Optimization"
+    },
+    "w17": {
+        "week": "Week 17",
+        "activityName": "Cryptography: Caesar Cipher Wheels & Key Shifts",
+        "bigIdea": "Encryption protects sensitive data by transforming plain text into ciphertext using mathematical key shifts and secret ciphers.",
+        "setupPrep": "Pre-cut inner and outer wheel templates on cardstock. Supply brass paper fasteners (split pins). Prepare secret message strips.",
+        "keyMaterials": [
+            "Cardstock cipher wheel templates",
+            "Brass paper fasteners (split pins)",
+            "Encrypted message activity sheets",
+            "Colored pencils"
+        ],
+        "title": "Cryptography & Secret Codes Part 1: Ciphers & Secret Sharing",
+        "concept": "Caesar Wheels & Key Shifts",
+        "montessori": "History of Language & Secret Writing (4th Lesson)",
+        "primaryDesc": "Symbol substitution cipher matching physical picture symbols to decode secret words.",
+        "elementaryDesc": "Numerical Caesar Cipher wheels (+3 key shift); build secret sharing schemes and trade encrypted secret messages.",
+        "steps": [
+            "Assemble paper Caesar Cipher wheels with brass fasteners.",
+            "Set inner and outer alphabet rings shifted by a secret key number (e.g., +3 shift).",
+            "Demonstrate encoding a message (A -> D) and decoding by reversing key shift.",
+            "Have students exchange encrypted notes and decode them using shared secret keys.",
+            "Discuss cybersecurity and private messaging over open networks."
+        ],
+        "controlOfError": "Decoded message output yields legible English words.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/cryptography/",
+        "resources": [
+            {
+                "title": "Printable Cipher Wheel Template",
+                "url": "#"
+            },
+            {
+                "title": "Secret Message Worksheets",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/be185d/ffffff?text=Caesar+Cipher+Wheel+Cryptography"
+    },
+    "w18": {
+        "week": "Week 18",
+        "activityName": "Cryptography: Modulo Math & Clock Arithmetic",
+        "bigIdea": "Modulo arithmetic (remainder math) provides the mathematical foundation for modern wrap-around ciphers and public-key cryptography.",
+        "setupPrep": "Distribute 12-hour and 26-point circular clock dials. Draw modulo equation examples (15 mod 12 = 3) on the whiteboard.",
+        "keyMaterials": [
+            "12-hour and 26-point clock dial manipulatives",
+            "Modulo math calculation worksheets",
+            "Dry-erase markers"
+        ],
+        "title": "Cryptography Part 2: Modulo Math & Clock Arithmetic",
+        "concept": "Remainder Operations & Clock Arithmetic",
+        "montessori": "Advanced Math Operations & Clock Work",
+        "primaryDesc": "Clock face math: practice 12-hour wrap-around arithmetic using movable clock hands.",
+        "elementaryDesc": "Remainder operations (A mod B) using 26-hour alphabet clock arithmetic to compute advanced wrap ciphers.",
+        "steps": [
+            "Introduce Modulo arithmetic as 'remainder math' using a 12-hour clock dial.",
+            "Demonstrate how 10 + 5 = 15 = 3 mod 12.",
+            "Extend clock arithmetic to 26 letters in the alphabet using Modulo 26 math.",
+            "Show how key shifts wrapping past 'Z' wrap back around to 'A' using mod operations.",
+            "Practice modular arithmetic cipher problems on paper."
+        ],
+        "controlOfError": "Clock dial visual positions. Tracing around the dial matches computed modular remainders.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/kidbots/modulo/",
+        "resources": [
+            {
+                "title": "Clock Arithmetic Worksheets",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/9d174d/ffffff?text=Modulo+Math+Clock+Arithmetic"
+    },
+    "w19": {
+        "week": "Week 19",
+        "activityName": "Applied Capstone Planning: Storyboarding & Flowcharts",
+        "bigIdea": "Software engineering begins with conceptual design, storyboarding user interfaces, and mapping system logic via flowcharts before writing code.",
+        "setupPrep": "Prepare 3-panel storyboard templates and flowchart symbol legend cards (Start/End, Action, Decision, Input/Output).",
+        "keyMaterials": [
+            "Storyboard & Flowchart planning sheets",
+            "Flowchart symbol reference guides",
+            "Colored markers & clipboards"
+        ],
+        "title": "Applied Capstone Planning & Digital Mapping",
+        "concept": "Storyboarding & Flowcharts",
+        "montessori": "Practical Life Planning & Stewardship",
+        "primaryDesc": "Draw ScratchJr scene storyboards and assign motion/tap trigger arrows to recycling items.",
+        "elementaryDesc": "Storyboard capstone software projects (Garden Tracker / Eco-Sorter) using flowcharts and pseudocode mapping.",
+        "steps": [
+            "Introduce the Capstone goal: convert unplugged logic into digital projects.",
+            "Brainstorm digital project ideas connected to CS Unplugged concepts (e.g., digital maze, binary quiz).",
+            "Draw storyboard frames depicting starting screen, main action, and game over/win screens.",
+            "Construct flowchart diagrams detailing user interactions and key events.",
+            "Review plans in peer feedback circles."
+        ],
+        "controlOfError": "Flowchart path completeness. Every decision box must have valid 'Yes' and 'No' exit paths.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/",
+        "resources": [
+            {
+                "title": "Storyboard & Flowchart Planner",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/831843/ffffff?text=Capstone+Digital+Mapping+Flowcharts"
+    },
+    "w20": {
+        "week": "Week 20",
+        "activityName": "Applied Capstone Phase 1: Digital Interface Setup",
+        "bigIdea": "Digital applications require structuring graphical user interface (GUI) assets, spatial coordinates, and event listener triggers.",
+        "setupPrep": "Set up tablet/computer workstations with Scratch / ScratchJr loaded. Ensure project save folders are created for every student pair.",
+        "keyMaterials": [
+            "Tablets / Laptops with Scratch/ScratchJr",
+            "Sprite design planning sheets",
+            "Event trigger cheat sheets"
+        ],
+        "title": "Applied Capstone Phase 1: Digital Interface Setup",
+        "concept": "Sprite Design & Event Triggers",
+        "montessori": "Concrete to Abstract Interface Design",
+        "primaryDesc": "Program tap triggers and message envelopes in ScratchJr to play success sounds when items enter correct bins.",
+        "elementaryDesc": "Design custom plant/trash sprites and set up canvas interface with event triggers in Scratch.",
+        "steps": [
+            "Set up student software workspaces or physical staging environments.",
+            "Design custom main character (sprite) and backdrop graphics.",
+            "Add basic trigger events (e.g., 'When Green Flag Clicked', 'When Space Key Pressed').",
+            "Program initial sprite placement coordinates on screen.",
+            "Save and organize project workspace files."
+        ],
+        "controlOfError": "Event trigger response. Clicking the trigger reliably resets and starts sprite positions.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/",
+        "resources": [
+            {
+                "title": "Interface Setup Guide",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/065f46/ffffff?text=Digital+Interface+Setup+Sprites"
+    },
+    "w21": {
+        "week": "Week 21",
+        "activityName": "Applied Capstone Phase 2: Logic, Loops & Variables",
+        "bigIdea": "Core application behavior relies on dynamic state variables (scores, timers) governed by continuous loops and conditional checks.",
+        "setupPrep": "Prepare code snippet reference cards for score incrementing, loop execution, and collision detection ('if touching sprite').",
+        "keyMaterials": [
+            "Tablets / Laptops",
+            "Variable & Loop logic cheat sheets",
+            "Physical bead score trackers (Primary)"
+        ],
+        "title": "Applied Capstone Phase 2: Digital Logic Implementation",
+        "concept": "Variables & Conditional Loops",
+        "montessori": "Mathematical Variables & Logic Execution",
+        "primaryDesc": "Add repeat loops and motion blocks in ScratchJr to automate sprite animations.",
+        "elementaryDesc": "Program conditional logic loops (if/else) and state variables (moisture_level, score) in Scratch.",
+        "steps": [
+            "Implement motion logic and directional key controls.",
+            "Create a Score variable to keep track of points.",
+            "Add IF/THEN condition blocks for sprite collisions (e.g., IF touching target THEN change score by 1).",
+            "Implement repeating loops for continuous background motion or timer countdowns.",
+            "Test individual code scripts sequentially."
+        ],
+        "controlOfError": "Variable update verification. Score correctly increments upon collision event.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/",
+        "resources": [
+            {
+                "title": "Logic Implementation Cheat Sheet",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/047857/ffffff?text=Digital+Logic+Variables+Loops"
+    },
+    "w22": {
+        "week": "Week 22",
+        "activityName": "Applied Capstone Phase 3: Systematic Peer Testing & Debugging",
+        "bigIdea": "Software quality assurance requires systematic peer testing, probing edge cases, logging unexpected glitches, and refactoring code.",
+        "setupPrep": "Print Peer Bug Report logs. Establish quiet peer-review pairs with clear testing protocols (e.g., 5 min testing, 5 min logging).",
+        "keyMaterials": [
+            "Peer Bug Report & Feedback sheets",
+            "Clipboards & pens",
+            "Tablets / Laptops"
+        ],
+        "title": "Applied Capstone Phase 3: Testing & Debugging",
+        "concept": "Peer Testing & Edge Cases",
+        "montessori": "Control of Error & Collaborative Review",
+        "primaryDesc": "Peer test ScratchJr projects; spot missing block links when sprite fails to move.",
+        "elementaryDesc": "Conduct systematic peer testing, log edge cases, and debug variable state glitches or path collisions.",
+        "steps": [
+            "Pair students up to conduct peer playtesting of each other's capstone projects.",
+            "Testers attempt edge cases (e.g., pressing wrong buttons, running into boundaries).",
+            "Record discovered bugs or unexpected behavior on a Debugging Log.",
+            "Programmers isolate and fix identified bugs in their project code.",
+            "Refactor long scripts into cleaner loops or subroutines."
+        ],
+        "controlOfError": "Successful peer re-testing confirming bug resolution.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/",
+        "resources": [
+            {
+                "title": "Peer Testing Log Sheet",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/059669/ffffff?text=Peer+Testing+And+Debugging"
+    },
+    "w23": {
+        "week": "Week 23",
+        "activityName": "Capstone Project Polishing & Presentation Prep",
+        "bigIdea": "User experience (UX) design and clear verbal presentation are crucial for communicating technological solutions to an audience.",
+        "setupPrep": "Print Display Card templates for student project stands. Set up presentation stations around the perimeter of the room.",
+        "keyMaterials": [
+            "Display Stand cardstock templates",
+            "Markers & art supplies",
+            "Tablets / Laptops",
+            "Presentation rubric cards"
+        ],
+        "title": "Project Polishing & Presentation Prep",
+        "concept": "UI Refinement & Showcase Cards",
+        "montessori": "Grace and Courtesy & Public Presentation",
+        "primaryDesc": "Practice explaining ScratchJr app controls to teacher; polish sprite visuals.",
+        "elementaryDesc": "Refine user interface aesthetics, write project documentation, and create showcase presentation cards.",
+        "steps": [
+            "Add finishing touches: title screen, instruction text, sound effects, and game over screen.",
+            "Create physical display cards explaining the CS Unplugged concept behind their project.",
+            "Practice presenting projects verbally to small groups.",
+            "Give constructive feedback on peer delivery and clarity.",
+            "Finalize project setups for showcase day."
+        ],
+        "controlOfError": "Presentation checklist complete with title screen, clear rules, and working demo.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/",
+        "resources": [
+            {
+                "title": "Showcase Display Card Template",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/10b981/ffffff?text=Project+Polishing+And+Presentation"
+    },
+    "w24": {
+        "week": "Week 24",
+        "activityName": "Year-End CS Living Museum & Community Showcase",
+        "bigIdea": "Sharing computational artifacts with a broader community validates learning, fosters mentorship, and celebrates creative achievement.",
+        "setupPrep": "Transform classroom into museum stations (Unplugged grids, Parity magic trick table, Sorting network, Digital Capstone stations). Print Certificates.",
+        "keyMaterials": [
+            "Unplugged activity props (grids, cards, cipher wheels)",
+            "Capstone display screens",
+            "Living Museum visitor passports",
+            "CS Completion Certificates"
+        ],
+        "title": "Year-End CS Living Museum & Community Showcase",
+        "concept": "Exhibition & Live Demos",
+        "montessori": "Multi-Age Community Showcase",
+        "primaryDesc": "Demonstrate Kidbot floor grid mazes and ScratchJr apps to parents and community guests.",
+        "elementaryDesc": "Exhibit Capstone digital tools (Eco-Sorter / Garden Tracker) and guide visitors through unplugged stations.",
+        "steps": [
+            "Set up classroom stations representing key activities across Trimesters 1, 2, and 3.",
+            "Welcome parents, teachers, and visitors to the Living CS Museum.",
+            "Students guide visitors through live unplugged challenges (e.g., Jam Sandwich Robot, Parity Magic trick, Sorting Network).",
+            "Demonstrate completed capstone digital projects.",
+            "Celebrate student achievement with CS Unplugged completion certificates!"
+        ],
+        "controlOfError": "Successful visitor participation and student-led activity completion.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/",
+        "resources": [
+            {
+                "title": "Showcase Certificate Template",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/34d399/ffffff?text=Year+End+CS+Living+Museum"
+    },
+    "lab": {
+        "week": "Lab",
+        "activityName": "Open Lab: Ozobot Hardware Integration & Digital Portfolios",
+        "bigIdea": "Bridging unplugged algorithms to physical robotics (Ozobots) and compiling digital portfolios solidifies long-term computational mastery.",
+        "setupPrep": "Charge Ozobot robots. Distribute color-code markers (Red, Blue, Green, Black) and butcher paper tracks. Set up digital portfolio folders.",
+        "keyMaterials": [
+            "Ozobot Bit/Evo robots",
+            "Ozobot color-code markers",
+            "Butcher paper & track templates",
+            "Digital portfolio templates"
+        ],
+        "title": "Open Lab / Buffer: Extension, Hardware Bridge & Portfolio Completion",
+        "concept": "Ozobot Integration & Open Exploration",
+        "montessori": "Self-Directed Choice Work & Digital Portfolio",
+        "primaryDesc": "Ozobot line-following code markers and open exploration on floor tracks.",
+        "elementaryDesc": "Ozobot integration, open Scratch coding exploration, and digital portfolio compilation.",
+        "steps": [
+            "Demonstrate Ozobot line-following markers (color codes for speed, turns, and loops).",
+            "Have Primary students construct custom paper mazes for Ozobots to navigate.",
+            "Have Elementary students program Ozobots using Ozoblockly or continue open Scratch exploration.",
+            "Compile student work samples, photographs, and code reflection sheets into individual portfolios.",
+            "Host a final classroom celebration and wrap-up."
+        ],
+        "controlOfError": "Robot color code reading. Ozobot flashes colored LED and executes command upon reading code marker.",
+        "csUnpluggedLink": "https://csunplugged.org/en/topics/",
+        "resources": [
+            {
+                "title": "Ozobot Code Reference Guide",
+                "url": "#"
+            }
+        ],
+        "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
+        "imagePlaceholder": "https://placehold.co/600x337/8b5cf6/ffffff?text=Ozobot+Hardware+Integration+Lab"
+    }
+}

@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Start Montessori - CS Unplugged Teacher & Admin Hub</title>
+  <title>Smart Start Montessori - CS Unplugged Scope & Sequence</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
     body { font-family: 'Inter', sans-serif; }
     .nav-tab-active { border-bottom: 3px solid #f59e0b; color: #fef3c7; font-weight: 700; background-color: rgba(255,255,255,0.08); }
-    .page-section { display: none; }
-    .page-section.active { display: block; }
+    .page-section { display: block; }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
@@ -36,21 +35,12 @@
           <button onclick="switchTab('index')" id="tab-home" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
             <i class="fa-solid fa-house mr-1.5 text-xs"></i>Home
           </button>
-          <button onclick="switchTab('curriculum')" id="tab-curriculum" class="nav-tab-active px-3 py-2 rounded-t-lg transition hover:bg-emerald-800">
+          <button onclick="switchTab('curriculum')" id="tab-curriculum" class="nav-tab-active px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
             <i class="fa-solid fa-book-open mr-1.5 text-xs"></i>Scope & Sequence
           </button>
           <button onclick="switchTab('assessment')" id="tab-assessment" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
             <i class="fa-solid fa-chart-line mr-1.5 text-xs"></i>Assessment Guide
           </button>
-          <!-- <button onclick="switchTab('tc-integration')" id="tab-tc-integration" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
-            <i class="fa-solid fa-folder-tree mr-1.5 text-xs"></i>Transparent Classroom
-          </button>
-          <button onclick="switchTab('digital-bridge')" id="tab-digital-bridge" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
-            <i class="fa-solid fa-code mr-1.5 text-xs"></i>Scratch & Bridge
-          </button>
-          <button onclick="switchTab('logistics')" id="tab-logistics" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
-            <i class="fa-solid fa-boxes-packing mr-1.5 text-xs"></i>Hardware & Admin
-          </button> -->
         </nav>
 
         <!-- Mobile Menu Button -->
@@ -68,224 +58,493 @@
       <button onclick="switchTab('index')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Home / Dashboard</button>
       <button onclick="switchTab('curriculum')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Scope & Sequence</button>
       <button onclick="switchTab('assessment')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Student Assessment Guide</button>
-      <!-- <button onclick="switchTab('tc-integration')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Transparent Classroom Setup</button>
-      <button onclick="switchTab('digital-bridge')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Scratch & Applied Coding Bridge</button>
-      <button onclick="switchTab('logistics')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Hardware & Admin Resources</button> -->
     </div>
   </header>
 
   <!-- Main Content Body -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full">
 
-    <!-- ================= PAGE 2: SCOPE & SEQUENCE ================= -->
-    <section id="page-curriculum" class="page-section active space-y-8">
+    <!-- ================= SCOPE & SEQUENCE SECTION ================= -->
+    <section id="page-curriculum" class="page-section space-y-8">
       
-      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-        <h2 class="text-2xl font-bold text-slate-900 mb-2">CS Unplugged Scope & Sequence (24-Week Dual-Track Matrix)</h2>
-        <p class="text-slate-600 text-sm mb-6">
-          Organized into three 8-week phases with dedicated, parallel activities for both Primary (3–6) and Elementary (6–12) classrooms every week.
-        </p>
-
-        <!-- Phase Tabs -->
-        <div class="grid md:grid-cols-3 gap-4 mb-6">
-          <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-xl">
-            <span class="text-xs font-bold uppercase text-emerald-800 bg-emerald-200 px-2 py-0.5 rounded">Phase 1 • Fall</span>
-            <h3 class="font-bold text-emerald-950 mt-2 text-base">Algorithms & Procedures</h3>
-            <p class="text-xs text-slate-600 mt-1">Parallels Great Lesson 1 (Laws of Universe). Focuses on sequencing, literal instructions, and debugging.</p>
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-5">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-slate-500 font-medium"><i class="fa-solid fa-calendar mr-1"></i>Oct 5, 2026 – May 14, 2027</span>
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 mt-1">CS Unplugged Scope & Sequence (Trimester Matrix)</h2>
+            <p class="text-slate-600 text-sm mt-1">
+              Organized into three trimesters with dedicated, parallel activities for both Primary (3–6) and Elementary (6–12) classrooms every week.
+            </p>
           </div>
-          <div class="bg-blue-50 border border-blue-200 p-4 rounded-xl">
-            <span class="text-xs font-bold uppercase text-blue-800 bg-blue-200 px-2 py-0.5 rounded">Phase 2 • Winter</span>
-            <h3 class="font-bold text-blue-950 mt-2 text-base">Data Representation</h3>
-            <p class="text-xs text-slate-600 mt-1">Parallels Great Lessons 2 & 3 (Life & Human Tools). Base-2 binary, pixel graphics, and data compression.</p>
-          </div>
-          <div class="bg-purple-50 border border-purple-200 p-4 rounded-xl">
-            <span class="text-xs font-bold uppercase text-purple-800 bg-purple-200 px-2 py-0.5 rounded">Phase 3 • Spring</span>
-            <h3 class="font-bold text-purple-950 mt-2 text-base">Information Theory & Security</h3>
-            <p class="text-xs text-slate-600 mt-1">Parallels Great Lessons 4 & 5 (Writing & Numerals). Sorting networks, parity error checking, and ciphers.</p>
+          <div class="flex items-center gap-2">
+            <div class="relative w-full md:w-64">
+              <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+              <input type="text" id="table-search" onkeyup="filterTable()" placeholder="Search week, activity, concept..." class="w-full pl-8 pr-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+            </div>
           </div>
         </div>
 
+        <!-- Phase Tabs & Date Summaries -->
+        <div class="grid md:grid-cols-3 gap-4">
+          <div onclick="filterPhase('t1')" class="cursor-pointer bg-emerald-50 border-2 border-emerald-300 p-4 rounded-xl hover:shadow-md transition relative group">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold uppercase text-emerald-800 bg-emerald-200 px-2 py-0.5 rounded">Trimester 1 • Fall</span>
+              <span class="text-[11px] font-semibold text-emerald-700 bg-white px-2 py-0.5 rounded border border-emerald-200">Weeks 1–9</span>
+            </div>
+            <h3 class="font-bold text-emerald-950 mt-2 text-base">Algorithms, Spatial Logic & Data Foundations</h3>
+            <p class="text-xs text-slate-600 mt-1">Oct 5 – Dec 11, 2026. <em>Theme: Human Robots & Sequential Logic.</em> Jam Sandwich Robot, Kidbots grids, Loops/Functions, Conditionals, Binary Numbers, Bitmaps & RLE Compression.</p>
+          </div>
+
+          <div onclick="filterPhase('t2')" class="cursor-pointer bg-blue-50 border border-blue-200 p-4 rounded-xl hover:shadow-md transition relative group">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold uppercase text-blue-800 bg-blue-200 px-2 py-0.5 rounded">Trimester 2 • Winter</span>
+              <span class="text-[11px] font-semibold text-blue-700 bg-white px-2 py-0.5 rounded border border-blue-200">Weeks 10–18</span>
+            </div>
+            <h3 class="font-bold text-blue-950 mt-2 text-base">Information Theory, Search & Parallel Systems</h3>
+            <p class="text-xs text-slate-600 mt-1">Jan 4 – Mar 5, 2027. <em>Theme: Data Transmission, Searching & Cryptography.</em> Text compression, Parity Magic checksums, Linear/Binary search, 20 Questions decision trees, Sorting Networks & Caesar ciphers.</p>
+          </div>
+
+          <div onclick="filterPhase('t3')" class="cursor-pointer bg-purple-50 border border-purple-200 p-4 rounded-xl hover:shadow-md transition relative group">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold uppercase text-purple-800 bg-purple-200 px-2 py-0.5 rounded">Trimester 3 • Spring</span>
+              <span class="text-[11px] font-semibold text-purple-700 bg-white px-2 py-0.5 rounded border border-purple-200">Weeks 19–24 + Open Lab</span>
+            </div>
+            <h3 class="font-bold text-purple-950 mt-2 text-base">Applied Capstone & Digital Integration</h3>
+            <p class="text-xs text-slate-600 mt-1">Mar 15 – May 14, 2027. <em>Theme: Software Development & Community Showcase.</em> Scratch/ScratchJr project mapping, UI logic implementation, peer testing, Living Museum exhibition & Ozobot open lab.</p>
+          </div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-100">
+          <div class="flex items-center space-x-1 text-xs">
+            <span class="text-slate-500 font-medium mr-2">Filter Trimester:</span>
+            <button onclick="setPhaseFilter('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg bg-emerald-800 text-white font-semibold shadow-sm transition">All Weeks</button>
+            <button onclick="setPhaseFilter('t1')" id="btn-filter-t1" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium transition">Trimester 1 (W1–W9)</button>
+            <button onclick="setPhaseFilter('t2')" id="btn-filter-t2" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium transition">Trimester 2 (W10–W18)</button>
+            <button onclick="setPhaseFilter('t3')" id="btn-filter-t3" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium transition">Trimester 3 (W19–W24+ Lab)</button>
+          </div>
+          <p id="table-count" class="text-xs text-slate-500 font-medium">Showing 25 weekly curriculum sessions</p>
+        </div>
+
         <!-- Curriculum Table -->
-        <div class="overflow-x-auto border border-slate-200 rounded-xl">
-          <table class="w-full text-left text-sm border-collapse">
+        <div class="overflow-x-auto border border-slate-200 rounded-xl shadow-sm">
+          <table id="curriculum-matrix" class="w-full text-left text-xs border-collapse">
             <thead>
-              <tr class="bg-slate-100 text-slate-700 uppercase text-xs font-bold tracking-wider border-b">
-                <th class="p-3">Weeks & Dates</th>
+              <tr class="bg-slate-100 text-slate-700 uppercase font-bold border-b border-slate-200">
+                <th class="p-3 w-32">Week & Dates</th>
+                <th class="p-3 w-48">Session Topic</th>
                 <th class="p-3">Primary Focus (Ages 3–6)</th>
                 <th class="p-3">Elementary Focus (Ages 6–12)</th>
-                <th class="p-3">Core CS Concept</th>
-                <th class="p-3">Montessori Connection</th>
+                <th class="p-3 w-36">Core CS Concept</th>
+                <th class="p-3 w-40">Montessori Alignment</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-slate-200">
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-emerald-800">W1 (Oct 5–9)</td>
-                <td class="p-3 font-bold text-slate-800">Kidbots Floor Grid (Simple 3x3 paths)</td>
-                <td class="p-3 font-bold text-slate-800">Jam Sandwich Robot (Literal Syntax)</td>
-                <td class="p-3">Algorithms & Sequencing</td>
-                <td class="p-3">Practical Life (Spatial Order)</td>
+            <tbody class="divide-y divide-slate-200 text-slate-700">
+              
+              <!-- TRIMESTER 1: ALGORITHMS, SPATIAL LOGIC & DATA FOUNDATIONS -->
+              <tr onclick="openActivityModal('w1')" class="phase-row t1 hover:bg-emerald-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-emerald-900 border-l-4 border-emerald-600">
+                  <div class="flex items-center justify-between">
+                    <span>W1</span>
+                    <i class="fa-solid fa-circle-info text-emerald-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Oct 5–9, 2026</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">The Great Story & The Jam Sandwich Robot</td>
+                <td class="p-3 text-slate-800">1-step physical actions; physically perform step before giving command to Teacher Robot.</td>
+                <td class="p-3 text-slate-800">Pair work writing precise written algorithm on paper prior to live testing on Teacher Robot.</td>
+                <td class="p-3"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">Human Robots & Sequential Logic</span></td>
+                <td class="p-3 text-slate-600">Practical Life (Grace & Courtesy, Sequence of Work)</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-emerald-800">W2 (Oct 12–16)</td>
-                <td class="p-3 font-bold text-slate-800">Cup Stacking Code (Color-coded height stacks)</td>
-                <td class="p-3 font-bold text-slate-800">Rescue Mission (Marching Orders & Functions)</td>
-                <td class="p-3">Loops & Optimization</td>
-                <td class="p-3">Sensorial (Grading Towers)</td>
+
+              <tr onclick="openActivityModal('w2')" class="phase-row t1 hover:bg-emerald-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-emerald-900 border-l-4 border-emerald-600">
+                  <div class="flex items-center justify-between">
+                    <span>W2</span>
+                    <i class="fa-solid fa-circle-info text-emerald-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Oct 12–16, 2026</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Kidbots Part 1: The Floor Grid & Arrows</td>
+                <td class="p-3 text-slate-800">3x3 Floor Grid. Concrete action: place physical arrow cards directly on grid squares ahead of Robot child.</td>
+                <td class="p-3 text-slate-800">5x5 Floor Grid. Abstract action: programmer lays out full arrow card sequence on external mat before Robot moves.</td>
+                <td class="p-3"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">Directional Cards & Precise Instructions</span></td>
+                <td class="p-3 text-slate-600">Spatial Awareness & Sensorial Orientation</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-emerald-800">W3 (Oct 19–23)</td>
-                <td class="p-3 font-bold text-slate-800">Handwashing Algorithm (Sequenced picture cards)</td>
-                <td class="p-3 font-bold text-slate-800">Plant a Seed Flowchart (Decomposition)</td>
-                <td class="p-3">Decomposition & Flowcharts</td>
-                <td class="p-3">Botany & Grace/Courtesy</td>
+
+              <tr onclick="openActivityModal('w3')" class="phase-row t1 hover:bg-emerald-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-emerald-900 border-l-4 border-emerald-600">
+                  <div class="flex items-center justify-between">
+                    <span>W3</span>
+                    <i class="fa-solid fa-circle-info text-emerald-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Oct 19–23, 2026</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Kidbots Part 2: Obstacles & Debugging</td>
+                <td class="p-3 text-slate-800">3x3 Grid with 1 obstacle cone. Physically swap out single incorrect arrow card when robot hits obstacle.</td>
+                <td class="p-3 text-slate-800">5x5 Grid with 3 obstacles. Identify bugs in peer sequences and compare two valid paths to determine efficiency.</td>
+                <td class="p-3"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">Systematic Error Spotting & Debugging</span></td>
+                <td class="p-3 text-slate-600">Control of Error & Self-Correction</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-emerald-800">W4 (Oct 26–30)</td>
-                <td class="p-3 font-bold text-slate-800">Button Sorting Algorithm (Attributes & Sorting)</td>
-                <td class="p-3 font-bold text-slate-800">Battleship Coordinate Algorithmic Mapping</td>
-                <td class="p-3">Conditional Logic & Grids</td>
-                <td class="p-3">Sensorial Sorting</td>
+
+              <tr onclick="openActivityModal('w4')" class="phase-row t1 hover:bg-emerald-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-emerald-900 border-l-4 border-emerald-600">
+                  <div class="flex items-center justify-between">
+                    <span>W4</span>
+                    <i class="fa-solid fa-circle-info text-emerald-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Oct 26–30, 2026</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Rescue Mission: Loops, Functions & Algorithmic Efficiency</td>
+                <td class="p-3 text-slate-800">Physical rhythm: clap or stomp for repeated actions ("Step, Clap, Step, Clap" -> "Repeat 2 times").</td>
+                <td class="p-3 text-slate-800">Re-write 10-step Kidbot path using Repeat Commands and Subroutines/Function Blocks to condense code under 5 total blocks.</td>
+                <td class="p-3"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">Repeat Commands & Subroutines/Function Blocks</span></td>
+                <td class="p-3 text-slate-600">Sensorial Patterns & Math Skip Counting</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-emerald-800">W5 (Nov 2–6)</td>
-                <td class="p-3 font-bold text-slate-800">Line Follower Tape Practice (Tactile paths)</td>
-                <td class="p-3 font-bold text-slate-800">ScratchJr Block Sequencing Intro</td>
-                <td class="p-3">Visual Block Execution</td>
-                <td class="p-3">Geometry & Movement</td>
+
+              <tr onclick="openActivityModal('w5')" class="phase-row t1 hover:bg-emerald-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-emerald-900 border-l-4 border-emerald-600">
+                  <div class="flex items-center justify-between">
+                    <span>W5</span>
+                    <i class="fa-solid fa-circle-info text-emerald-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Nov 2–6, 2026</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Conditional Logic & Decision Paths</td>
+                <td class="p-3 text-slate-800">Concrete physical rules: "IF stepping on red mat, THEN turn right, ELSE walk straight forward."</td>
+                <td class="p-3 text-slate-800">Construct floor grid branching paths using IF/THEN/ELSE condition cards and test edge-case choices.</td>
+                <td class="p-3"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">If/Then Rules & Floor Branching</span></td>
+                <td class="p-3 text-slate-600">Logical Reasoning & Practical Choice Work</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-emerald-800">W6 (Nov 9–13)</td>
-                <td class="p-3 font-bold text-slate-800">Classroom Object Search Algorithm</td>
-                <td class="p-3 font-bold text-slate-800">ScratchJr Interactive Story Coding</td>
-                <td class="p-3">Triggers & Events</td>
-                <td class="p-3">Language Storytelling</td>
+
+              <tr onclick="openActivityModal('w6')" class="phase-row t1 hover:bg-emerald-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-emerald-900 border-l-4 border-emerald-600">
+                  <div class="flex items-center justify-between">
+                    <span>W6</span>
+                    <i class="fa-solid fa-circle-info text-emerald-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Nov 9–13, 2026</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Binary Numbers Part 1: Dots, Switches & Base-2</td>
+                <td class="p-3 text-slate-800">Use 3 Binary Dot Cards (4, 2, 1); practice counting dots and flipping cards ON (visible) and OFF (blank).</td>
+                <td class="p-3 text-slate-800">Use 5 Binary Dot Cards (16, 8, 4, 2, 1); practice place values and count sequentially from 0 to 31 in binary systems.</td>
+                <td class="p-3"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">Card Flips & Binary Systems</span></td>
+                <td class="p-3 text-slate-600">Math (Decimal System & Golden Beads)</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-emerald-800">W7 (Nov 16–20)</td>
-                <td class="p-3 font-bold text-slate-800">Animal Movement Step Patterns</td>
-                <td class="p-3 font-bold text-slate-800">Debug the Broken Recipe Code</td>
-                <td class="p-3">Debugging & Error Finding</td>
-                <td class="p-3">Practical Life Checking</td>
+
+              <tr onclick="openActivityModal('w7')" class="phase-row t1 hover:bg-emerald-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-emerald-900 border-l-4 border-emerald-600">
+                  <div class="flex items-center justify-between">
+                    <span>W7</span>
+                    <i class="fa-solid fa-circle-info text-emerald-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Nov 16–20, 2026</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Binary Numbers Part 2: Binary Alphabet & Counting</td>
+                <td class="p-3 text-slate-800">Encode first initial using 5 physical black/white tiles or bead sequences.</td>
+                <td class="p-3 text-slate-800">Encode 4-letter secret word into 5-Bit ASCII binary encoding; craft bead bracelets and decode peer messages.</td>
+                <td class="p-3"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">5-Bit Encoding & Bead Bracelets</span></td>
+                <td class="p-3 text-slate-600">Language Work & History of Writing (4th Great Lesson)</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-emerald-800">W8 (Nov 23–27)</td>
-                <td class="p-3 font-bold text-slate-800">Thanksgiving Feast Step Sequencing</td>
-                <td class="p-3 font-bold text-slate-800">Algorithm Efficiency Challenge (Shortest path)</td>
-                <td class="p-3">Algorithmic Efficiency</td>
-                <td class="p-3">Cultural & Practical Life</td>
+
+              <tr class="phase-row t1 break bg-slate-50/80 hover:bg-amber-50/50 transition">
+                <td class="p-3 font-bold text-slate-500 border-l-4 border-slate-300">
+                  <span>--</span> <span class="text-[10px] block font-normal text-slate-400">Nov 23–27, 2026</span>
+                </td>
+                <td class="p-3 font-semibold text-slate-500 italic">Thanksgiving Holiday Break</td>
+                <td class="p-3 text-slate-400 italic" colspan="4">No weekly CS session observed. School closed for Thanksgiving Break.</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-blue-800">W9 (Nov 30–Dec 4)</td>
-                <td class="p-3 font-bold text-slate-800">Binary Dot Counting (1 and 2 dots)</td>
-                <td class="p-3 font-bold text-slate-800">Binary Cards & Base-2 System (1 to 31)</td>
-                <td class="p-3">Binary Digits (Bits)</td>
-                <td class="p-3">Math: Stamp Game & Beads</td>
+
+              <tr onclick="openActivityModal('w8')" class="phase-row t1 hover:bg-emerald-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-emerald-900 border-l-4 border-emerald-600">
+                  <div class="flex items-center justify-between">
+                    <span>W8</span>
+                    <i class="fa-solid fa-circle-info text-emerald-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Nov 30 – Dec 4, 2026</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Image Representation: Pixels, Grids & Color by Numbers</td>
+                <td class="p-3 text-slate-800">3-color palette (0=White, 1=Red, 2=Yellow) 5x5 grid. Copy visual card showing a simple pixel heart or smile directly onto grid worksheet.</td>
+                <td class="p-3 text-slate-800">5-color palette on 10x10 grid. Decode raw binary code strings line-by-line into bitmaps to reveal hidden pixel art image.</td>
+                <td class="p-3"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">Bitmaps & Pixel Art</span></td>
+                <td class="p-3 text-slate-600">Geometry (Grids & Area) & Visual Grading</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-blue-800">W10 (Dec 7–11)</td>
-                <td class="p-3 font-bold text-slate-800">Light/Dark Color Sorting Grid</td>
-                <td class="p-3 font-bold text-slate-800">Image Representation (5x5 Pixel Art Grids)</td>
-                <td class="p-3">Bitmaps & Pixel Encodings</td>
-                <td class="p-3">Geometry & Art Grids</td>
+
+              <tr onclick="openActivityModal('w9')" class="phase-row t1 hover:bg-emerald-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-emerald-900 border-l-4 border-emerald-600">
+                  <div class="flex items-center justify-between">
+                    <span>W9</span>
+                    <i class="fa-solid fa-circle-info text-emerald-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Dec 7–11, 2026</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Data Compression: Run-Length Encoding</td>
+                <td class="p-3 text-slate-800">Physical bead compression: group 5 identical white beads and place number tag "5" next to single bead.</td>
+                <td class="p-3 text-slate-800">10x10 grid challenge using RLE code strings (e.g., 2W, 4B, 2W); squeeze pixel codes and calculate percentage of file space saved.</td>
+                <td class="p-3"><span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">Squeezing Pixel Codes & Compression</span></td>
+                <td class="p-3 text-slate-600">Language Shorthand & Math Grouping</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-blue-800">W11 (Dec 14–18)</td>
-                <td class="p-3 font-bold text-slate-800">Binary Bead Stringing (Simple ON/OFF)</td>
-                <td class="p-3 font-bold text-slate-800">Binary Bracelets (5-bit Initial Encoding)</td>
-                <td class="p-3">Character Encoding</td>
-                <td class="p-3">Sensorial Fine Motor</td>
+
+              <tr class="phase-row t1 break bg-slate-50/80 hover:bg-amber-50/50 transition">
+                <td class="p-3 font-bold text-slate-500 border-l-4 border-slate-300">
+                  <span>--</span> <span class="text-[10px] block font-normal text-slate-400">Dec 14, 2026 – Jan 1, 2027</span>
+                </td>
+                <td class="p-3 font-semibold text-slate-500 italic">Winter Holiday Break</td>
+                <td class="p-3 text-slate-400 italic" colspan="4">No weekly CS session observed. School closed for Winter Break.</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-blue-800">W12 (Jan 4–8)</td>
-                <td class="p-3 font-bold text-slate-800">Pattern Block Image Reconstruction</td>
-                <td class="p-3 font-bold text-slate-800">Run-Length Encoding (Text Compression)</td>
-                <td class="p-3">Lossless Compression</td>
-                <td class="p-3">Language Shorthand</td>
+
+              <!-- TRIMESTER 2: INFORMATION THEORY, SEARCH & PARALLEL SYSTEMS -->
+              <tr onclick="openActivityModal('w10')" class="phase-row t2 hover:bg-blue-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-blue-900 border-l-4 border-blue-600">
+                  <div class="flex items-center justify-between">
+                    <span>W10</span>
+                    <i class="fa-solid fa-circle-info text-blue-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Jan 4–8, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Text & Pattern Compression</td>
+                <td class="p-3 text-slate-800">Symbol replacement: substitute recurring story words with physical picture tokens.</td>
+                <td class="p-3 text-slate-800">Compress nursery rhymes using dictionary keys, pointers, and redundancy reduction cards.</td>
+                <td class="p-3"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-medium">Dictionary Keys, Pointers & Redundancy Reduction</span></td>
+                <td class="p-3 text-slate-600">Language Work & Sentence Analysis</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-blue-800">W13 (Jan 11–15)</td>
-                <td class="p-3 font-bold text-slate-800">Secret Symbol Matching Cards</td>
-                <td class="p-3 font-bold text-slate-800">ASCII Text Translation Worksheets</td>
-                <td class="p-3">Standard Data Tables</td>
-                <td class="p-3">Language Symbol Work</td>
+
+              <tr onclick="openActivityModal('w11')" class="phase-row t2 hover:bg-blue-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-blue-900 border-l-4 border-blue-600">
+                  <div class="flex items-center justify-between">
+                    <span>W11</span>
+                    <i class="fa-solid fa-circle-info text-blue-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Jan 11–15, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Parity Magic Part 1: Error Detection</td>
+                <td class="p-3 text-slate-800">3x3 card grid. Practice counting even/odd pairs of colored cards with teacher guidance.</td>
+                <td class="p-3 text-slate-800">5x5 card grid. Set up parity checksum row/column using even/odd grid matrix logic to perform "magic trick" error detection.</td>
+                <td class="p-3"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-medium">Even/Odd Grid Matrix Logic</span></td>
+                <td class="p-3 text-slate-600">Observation & Pattern Matching</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-blue-800">W14 (Jan 18–22)</td>
-                <td class="p-3 font-bold text-slate-800">Tablet Pixel Coloring App</td>
-                <td class="p-3 font-bold text-slate-800">Scratch Pixel Art Drawer Project</td>
-                <td class="p-3">Digital Graphics</td>
-                <td class="p-3">Computer Tech Bridge</td>
+
+              <tr onclick="openActivityModal('w12')" class="phase-row t2 hover:bg-blue-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-blue-900 border-l-4 border-blue-600">
+                  <div class="flex items-center justify-between">
+                    <span>W12</span>
+                    <i class="fa-solid fa-circle-info text-blue-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Jan 18–22, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Parity Magic Part 2: Checksums & Data Reliability</td>
+                <td class="p-3 text-slate-800">Identify altered card location in a 3x3 guided layout matrix.</td>
+                <td class="p-3 text-slate-800">Complete 5x5 self-healing error correction matrix and simulate transmission verification across data networks.</td>
+                <td class="p-3"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-medium">Checksums & Transmission Verification</span></td>
+                <td class="p-3 text-slate-600">Self-Correction & Error Fixing</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-blue-800">W15 (Jan 25–29)</td>
-                <td class="p-3 font-bold text-slate-800">Secret Message Flip Cards</td>
-                <td class="p-3 font-bold text-slate-800">Secret Cipher Wheels (Data concealment)</td>
-                <td class="p-3">Data Security</td>
-                <td class="p-3">History of Writing</td>
+
+              <tr onclick="openActivityModal('w13')" class="phase-row t2 hover:bg-blue-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-blue-900 border-l-4 border-blue-600">
+                  <div class="flex items-center justify-between">
+                    <span>W13</span>
+                    <i class="fa-solid fa-circle-info text-blue-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Jan 25–29, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Linear vs. Binary Search & Algorithmic Thinking</td>
+                <td class="p-3 text-slate-800">Cup search across 10 cups using physical flips and higher/lower visual prompts.</td>
+                <td class="p-3 text-slate-800">Compare linear cup search vs. binary search across 30+ cups, recording total steps and proving $O(\log N)$ efficiency.</td>
+                <td class="p-3"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-medium">Cup Search & O(log N) Efficiency</span></td>
+                <td class="p-3 text-slate-600">Sensorial Gradation & Systematic Ordering</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-blue-800">W16 (Feb 1–5)</td>
-                <td class="p-3 font-bold text-slate-800">Heavy vs. Light Object Weight Sorting</td>
-                <td class="p-3 font-bold text-slate-800">Data Storage Capacity & File Sizes</td>
-                <td class="p-3">Memory Scale</td>
-                <td class="p-3">Sensorial Baric Tablets</td>
+
+              <tr onclick="openActivityModal('w14')" class="phase-row t2 hover:bg-blue-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-blue-900 border-l-4 border-blue-600">
+                  <div class="flex items-center justify-between">
+                    <span>W14</span>
+                    <i class="fa-solid fa-circle-info text-blue-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Feb 1–5, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">20 Questions Algorithmic Search & Decision Trees</td>
+                <td class="p-3 text-slate-800">Search using 8 visual object cards with pre-drawn visual classification paths.</td>
+                <td class="p-3 text-slate-800">Construct binary decision trees for 16–20 items on graph paper, tracing paths with minimal binary questions.</td>
+                <td class="p-3"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-medium">Classification & Information Theory</span></td>
+                <td class="p-3 text-slate-600">Sensorial Classification & Botany/Zoology Taxonomy</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-purple-800">W17 (Feb 8–12)</td>
-                <td class="p-3 font-bold text-slate-800">Indoor Size Grading Rod Sorting</td>
-                <td class="p-3 font-bold text-slate-800">Outdoor Sorting Networks (Part 1)</td>
-                <td class="p-3">Parallel Processing</td>
-                <td class="p-3">Sensorial Number Rods</td>
+
+              <tr onclick="openActivityModal('w15')" class="phase-row t2 hover:bg-blue-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-blue-900 border-l-4 border-blue-600">
+                  <div class="flex items-center justify-between">
+                    <span>W15</span>
+                    <i class="fa-solid fa-circle-info text-blue-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Feb 8–12, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Sorting Networks Part 1: Outdoor Parallel Processing</td>
+                <td class="p-3 text-slate-800">1-digit number cards; navigate outdoor chalk network following node spatial rules.</td>
+                <td class="p-3 text-slate-800">Large 2-digit or 3-digit cards; time parallel network sorting with stopwatch to measure algorithm throughput speed.</td>
+                <td class="p-3"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-medium">Floor Grid Spatial Rules & Parallel Processing</span></td>
+                <td class="p-3 text-slate-600">Sensorial Grading & Grace and Courtesy</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-purple-800">W18 (Feb 15–19)</td>
-                <td class="p-3 font-bold text-slate-800">Peer Lineup by Height Sequence</td>
-                <td class="p-3 font-bold text-slate-800">Outdoor Sorting Networks (Part 2 - Timed)</td>
-                <td class="p-3">Sorting Algorithms</td>
-                <td class="p-3">Sensorial Cylinders</td>
+
+              <tr onclick="openActivityModal('w16')" class="phase-row t2 hover:bg-blue-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-blue-900 border-l-4 border-blue-600">
+                  <div class="flex items-center justify-between">
+                    <span>W16</span>
+                    <i class="fa-solid fa-circle-info text-blue-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Feb 15–19, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Sorting Networks Part 2: Network Optimization & Timing</td>
+                <td class="p-3 text-slate-800">Sort physical objects by size (small, medium, large foam blocks) through outdoor chalk paths.</td>
+                <td class="p-3 text-slate-800">Compare Parallel vs. Serial Sorting; reverse sort numbers descending and design custom 4-person network logic.</td>
+                <td class="p-3"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-medium">Parallel vs. Serial Sorting & Optimization</span></td>
+                <td class="p-3 text-slate-600">Reasoning Mind & Critical Thinking</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-purple-800">W19 (Feb 22–26)</td>
-                <td class="p-3 font-bold text-slate-800">Missing Object Guessing Game (Linear Search)</td>
-                <td class="p-3 font-bold text-slate-800">20 Questions: Linear vs. Binary Search</td>
-                <td class="p-3">Search Algorithms</td>
-                <td class="p-3">Sensorial Mystery Bag</td>
+
+              <tr onclick="openActivityModal('w17')" class="phase-row t2 hover:bg-blue-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-blue-900 border-l-4 border-blue-600">
+                  <div class="flex items-center justify-between">
+                    <span>W17</span>
+                    <i class="fa-solid fa-circle-info text-blue-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Feb 22–26, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Cryptography & Secret Codes Part 1: Ciphers & Secret Sharing</td>
+                <td class="p-3 text-slate-800">Symbol substitution cipher matching physical picture symbols to decode secret words.</td>
+                <td class="p-3 text-slate-800">Numerical Caesar Cipher wheels (+3 key shift); build secret sharing schemes and trade encrypted secret messages.</td>
+                <td class="p-3"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-medium">Caesar Wheels & Key Shifts</span></td>
+                <td class="p-3 text-slate-600">History of Language & Secret Writing (4th Lesson)</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-purple-800">W20 (Mar 1–5)</td>
-                <td class="p-3 font-bold text-slate-800">Spot the Difference Picture Puzzles</td>
-                <td class="p-3 font-bold text-slate-800">Parity Magic: Error Detection Checksums</td>
-                <td class="p-3">Error Checksum Bits</td>
-                <td class="p-3">Math Odd/Even Control</td>
+
+              <tr onclick="openActivityModal('w18')" class="phase-row t2 hover:bg-blue-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-blue-900 border-l-4 border-blue-600">
+                  <div class="flex items-center justify-between">
+                    <span>W18</span>
+                    <i class="fa-solid fa-circle-info text-blue-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Mar 1–5, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Cryptography Part 2: Modulo Math & Clock Arithmetic</td>
+                <td class="p-3 text-slate-800">Clock face math: practice 12-hour wrap-around arithmetic using movable clock hands.</td>
+                <td class="p-3 text-slate-800">Remainder operations ($A \bmod B$) using 26-hour alphabet clock arithmetic to compute advanced wrap ciphers.</td>
+                <td class="p-3"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-medium">Remainder Operations & Clock Arithmetic</span></td>
+                <td class="p-3 text-slate-600">Advanced Math Operations & Clock Work</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-purple-800">W21 (Mar 8–12)</td>
-                <td class="p-3 font-bold text-slate-800">Secret Code Stamp Matching</td>
-                <td class="p-3 font-bold text-slate-800">Caesar Cipher & Modulo Math Encryption</td>
-                <td class="p-3">Cryptography</td>
-                <td class="p-3">History of Alphabet</td>
+
+              <tr class="phase-row t2 break bg-slate-50/80 hover:bg-amber-50/50 transition">
+                <td class="p-3 font-bold text-slate-500 border-l-4 border-slate-300">
+                  <span>--</span> <span class="text-[10px] block font-normal text-slate-400">Mar 8–12, 2027</span>
+                </td>
+                <td class="p-3 font-semibold text-slate-500 italic">Spring Break / Forney ISD</td>
+                <td class="p-3 text-slate-400 italic" colspan="4">No weekly CS session observed. School closed for Spring Break.</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-purple-800">W22 (Mar 15–19)</td>
-                <td class="p-3 font-bold text-slate-800">Robot Maze Obstacle Course Walk</td>
-                <td class="p-3 font-bold text-slate-800">Scratch Conditionals & Sensor Lab</td>
-                <td class="p-3">Conditional Statements</td>
-                <td class="p-3">Practical Life Movement</td>
+
+              <!-- TRIMESTER 3: APPLIED CAPSTONE & DIGITAL INTEGRATION -->
+              <tr onclick="openActivityModal('w19')" class="phase-row t3 hover:bg-purple-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-purple-900 border-l-4 border-purple-600">
+                  <div class="flex items-center justify-between">
+                    <span>W19</span>
+                    <i class="fa-solid fa-circle-info text-purple-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Mar 15–19, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Applied Capstone Planning & Digital Mapping</td>
+                <td class="p-3 text-slate-800">Draw ScratchJr scene storyboards and assign motion/tap trigger arrows to recycling items.</td>
+                <td class="p-3 text-slate-800">Storyboard capstone software projects (Garden Tracker / Eco-Sorter) using flowcharts and pseudocode mapping.</td>
+                <td class="p-3"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-medium">Storyboarding & Flowcharts</span></td>
+                <td class="p-3 text-slate-600">Practical Life Planning & Stewardship</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-purple-800">W23 (Mar 22–26)</td>
-                <td class="p-3 font-bold text-slate-800">Eco-Sorting Recycle Bin Sort</td>
-                <td class="p-3 font-bold text-slate-800">Eco-Sorter Scratch Capstone Project</td>
-                <td class="p-3">Applied Capstone Design</td>
-                <td class="p-3">Biology & Stewardship</td>
+
+              <tr onclick="openActivityModal('w20')" class="phase-row t3 hover:bg-purple-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-purple-900 border-l-4 border-purple-600">
+                  <div class="flex items-center justify-between">
+                    <span>W20</span>
+                    <i class="fa-solid fa-circle-info text-purple-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Mar 22–26, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Applied Capstone Phase 1: Digital Interface Setup</td>
+                <td class="p-3 text-slate-800">Program tap triggers and message envelopes in ScratchJr to play success sounds when items enter correct bins.</td>
+                <td class="p-3 text-slate-800">Design custom plant/trash sprites and set up canvas interface with event triggers in Scratch.</td>
+                <td class="p-3"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-medium">Sprite Design & Event Triggers</span></td>
+                <td class="p-3 text-slate-600">Concrete to Abstract Interface Design</td>
               </tr>
-              <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-purple-800">W24 (Apr 5–9)</td>
-                <td class="p-3 font-bold text-slate-800">Plant Growth Sequencing Cards</td>
-                <td class="p-3 font-bold text-slate-800">Smart Garden Python / Scratch Tracker</td>
-                <td class="p-3">Capstone Integration</td>
-                <td class="p-3">Botany & Nature Science</td>
+
+              <tr onclick="openActivityModal('w21')" class="phase-row t3 hover:bg-purple-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-purple-900 border-l-4 border-purple-600">
+                  <div class="flex items-center justify-between">
+                    <span>W21</span>
+                    <i class="fa-solid fa-circle-info text-purple-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Mar 29 – Apr 2, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Applied Capstone Phase 2: Digital Logic Implementation</td>
+                <td class="p-3 text-slate-800">Add repeat loops and motion blocks in ScratchJr to automate sprite animations.</td>
+                <td class="p-3 text-slate-800">Program conditional logic loops (`if/else`) and state variables (`moisture_level`, `score`) in Scratch.</td>
+                <td class="p-3"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-medium">Variables & Conditional Loops</span></td>
+                <td class="p-3 text-slate-600">Mathematical Variables & Logic Execution</td>
               </tr>
+
+              <tr onclick="openActivityModal('w22')" class="phase-row t3 hover:bg-purple-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-purple-900 border-l-4 border-purple-600">
+                  <div class="flex items-center justify-between">
+                    <span>W22</span>
+                    <i class="fa-solid fa-circle-info text-purple-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Apr 5–9, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Applied Capstone Phase 3: Testing & Debugging</td>
+                <td class="p-3 text-slate-800">Peer test ScratchJr projects; spot missing block links when sprite fails to move.</td>
+                <td class="p-3 text-slate-800">Conduct systematic peer testing, log edge cases, and debug variable state glitches or path collisions.</td>
+                <td class="p-3"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-medium">Peer Testing & Edge Cases</span></td>
+                <td class="p-3 text-slate-600">Control of Error & Collaborative Review</td>
+              </tr>
+
+              <tr onclick="openActivityModal('w23')" class="phase-row t3 hover:bg-purple-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-purple-900 border-l-4 border-purple-600">
+                  <div class="flex items-center justify-between">
+                    <span>W23</span>
+                    <i class="fa-solid fa-circle-info text-purple-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Apr 12–16, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Project Polishing & Presentation Prep</td>
+                <td class="p-3 text-slate-800">Practice explaining ScratchJr app controls to teacher; polish sprite visuals.</td>
+                <td class="p-3 text-slate-800">Refine user interface aesthetics, write project documentation, and create showcase presentation cards.</td>
+                <td class="p-3"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-medium">UI Refinement & Showcase Cards</span></td>
+                <td class="p-3 text-slate-600">Grace and Courtesy & Public Presentation</td>
+              </tr>
+
+              <tr onclick="openActivityModal('w24')" class="phase-row t3 hover:bg-purple-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-purple-900 border-l-4 border-purple-600">
+                  <div class="flex items-center justify-between">
+                    <span>W24</span>
+                    <i class="fa-solid fa-circle-info text-purple-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Apr 19–23, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Year-End CS Living Museum & Community Showcase</td>
+                <td class="p-3 text-slate-800">Demonstrate Kidbot floor grid mazes and ScratchJr apps to parents and community guests.</td>
+                <td class="p-3 text-slate-800">Exhibit Capstone digital tools (Eco-Sorter / Garden Tracker) and guide visitors through unplugged stations.</td>
+                <td class="p-3"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-medium">Exhibition & Live Demos</span></td>
+                <td class="p-3 text-slate-600">Multi-Age Community Showcase</td>
+              </tr>
+
+              <tr onclick="openActivityModal('lab')" class="phase-row t3 hover:bg-purple-100/60 transition cursor-pointer group" title="Click to view activity details & resources">
+                <td class="p-3 font-bold text-purple-900 border-l-4 border-purple-600">
+                  <div class="flex items-center justify-between">
+                    <span>Lab</span>
+                    <i class="fa-solid fa-circle-info text-purple-500 opacity-0 group-hover:opacity-100 transition text-xs"></i>
+                  </div>
+                  <span class="text-[10px] block font-normal text-slate-500">Apr 26 – May 14, 2027</span>
+                </td>
+                <td class="p-3 font-bold text-slate-900">Open Lab / Buffer: Extension, Hardware Bridge & Portfolio Completion</td>
+                <td class="p-3 text-slate-800">Ozobot line-following code markers and open exploration on floor tracks.</td>
+                <td class="p-3 text-slate-800">Ozobot integration, open Scratch coding exploration, and digital portfolio compilation.</td>
+                <td class="p-3"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-medium">Ozobot Integration & Open Exploration</span></td>
+                <td class="p-3 text-slate-600">Self-Directed Choice Work & Digital Portfolio</td>
+              </tr>
+
             </tbody>
           </table>
         </div>
@@ -295,18 +554,132 @@
 
   </main>
 
+  <!-- Activity Detail Modal Backdrop & Container -->
+  <div id="activity-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden transition-opacity duration-300">
+    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 flex flex-col">
+      
+      <!-- Modal Header -->
+      <div class="p-6 bg-slate-900 text-white rounded-t-2xl flex items-start justify-between border-b border-slate-800 sticky top-0 z-10">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span id="modal-week-badge" class="px-2 py-0.5 text-xs font-bold bg-emerald-500 text-white rounded">W1</span>
+            <span id="modal-concept-badge" class="px-2 py-0.5 text-xs font-medium bg-slate-800 text-emerald-300 rounded border border-emerald-800/50">Human Robots</span>
+          </div>
+          <h3 id="modal-title" class="text-xl font-bold text-white">The Jam Sandwich Robot</h3>
+          <p id="modal-montessori" class="text-xs text-slate-400 mt-0.5">Practical Life Alignment: Sequence of Work & Grace and Courtesy</p>
+        </div>
+        <button onclick="closeActivityModal()" class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition">
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body Content -->
+      <div class="p-6 space-y-6 text-slate-700 text-xs md:text-sm">
+        
+        <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl shadow-sm">
+          <h4 class="font-bold text-amber-900 text-xs uppercase tracking-wider flex items-center gap-1.5 mb-1">
+            <i class="fa-solid fa-lightbulb text-amber-600"></i> Big Idea & Core Principle
+          </h4>
+          <p id="modal-big-idea" class="text-xs md:text-sm font-medium text-amber-950 leading-relaxed">
+            Computers strictly execute literal instructions without human intuition or context.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-emerald-50/60 p-4 rounded-xl border border-emerald-200 space-y-1.5">
+            <h4 class="font-bold text-emerald-900 text-xs uppercase tracking-wider flex items-center gap-1.5">
+              <i class="fa-solid fa-screwdriver-wrench text-emerald-600"></i> Setup & Environment Prep
+            </h4>
+            <p id="modal-setup-prep" class="text-xs text-emerald-950 leading-relaxed">
+              Set up a clean demonstration table at the front of the circle rug.
+            </p>
+          </div>
+
+          <div class="bg-blue-50/60 p-4 rounded-xl border border-blue-200 space-y-1.5">
+            <h4 class="font-bold text-blue-900 text-xs uppercase tracking-wider flex items-center gap-1.5">
+              <i class="fa-solid fa-boxes-stacked text-blue-600"></i> Key Materials Required
+            </h4>
+            <ul id="modal-key-materials" class="text-xs text-blue-950 space-y-1 list-disc list-inside">
+              <!-- Dynamically populated materials -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Quick Overview Grid -->
+        <div class="grid md:grid-cols-2 gap-4 bg-slate-50 p-4 rounded-xl border border-slate-200">
+          <div>
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider text-emerald-800 mb-1">Primary Focus (Ages 3–6)</h4>
+            <p id="modal-primary-desc" class="text-xs text-slate-600">1-step physical actions; physically perform step before giving command to Teacher Robot.</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-xs uppercase tracking-wider text-emerald-800 mb-1">Elementary Focus (Ages 6–12)</h4>
+            <p id="modal-elementary-desc" class="text-xs text-slate-600">Pair work writing precise written algorithm on paper prior to live testing on Teacher Robot.</p>
+          </div>
+        </div>
+
+        <!-- Facilitation Steps -->
+        <div>
+          <h4 class="font-bold text-slate-900 text-sm mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-list-check text-emerald-600"></i> Steps to Facilitate Activity
+          </h4>
+          <ol id="modal-steps" class="list-decimal list-inside space-y-2 text-slate-700 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100">
+            <!-- Dynamically populated -->
+          </ol>
+        </div>
+
+        <!-- Control of Error & Self-Correction -->
+        <div class="bg-amber-50/80 p-4 rounded-xl border border-amber-200 space-y-1">
+          <h4 class="font-bold text-amber-950 text-xs uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-shield-halved text-amber-600"></i> Control of Error (Self-Correction)
+          </h4>
+          <p id="modal-control-error" class="text-xs text-amber-900 leading-relaxed">
+            The teacher acts as a literal robot—executing instructions exactly as spoken or written.
+          </p>
+        </div>
+
+        <!-- Video Demonstration / Photo Placeholder -->
+        <div>
+          <h4 class="font-bold text-slate-900 text-sm mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-video text-emerald-600"></i> Activity Demonstration & Classroom Example
+          </h4>
+          <div id="modal-media-container" class="w-full aspect-video bg-slate-100 rounded-xl overflow-hidden border border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+            <!-- Dynamically populated iframe or image placeholder -->
+          </div>
+        </div>
+
+        <!-- Links & External Resources -->
+        <div class="pt-2 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+          <a id="modal-cs-link" href="#" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:text-emerald-900 bg-emerald-100 px-3 py-2 rounded-lg transition">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Official CS Unplugged Lesson
+          </a>
+          <div id="modal-resources" class="flex flex-wrap items-center gap-2">
+            <!-- Additional resource badges loaded dynamically -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 bg-slate-50 rounded-b-2xl border-t border-slate-200 flex justify-end">
+        <button onclick="closeActivityModal()" class="px-4 py-2 bg-slate-800 hover:bg-slate-900 text-white font-medium rounded-lg text-xs transition">
+          Close Window
+        </button>
+      </div>
+
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
-      <p>© 2026 Smart Start Montessori • CS Unplugged Educator & Admin Reference Site</p>
+      <p>© 2026–2027 Smart Start Montessori • CS Unplugged Educator & Admin Reference Site</p>
       <p class="text-slate-500">Hosted via GitHub Pages • Designed for Multi-Age Montessori Classrooms (Ages 3–12)</p>
     </div>
   </footer>
 
-  <!-- JavaScript for Tab Switching and Interaction -->
+  <!-- JavaScript for Navigation, Table Filtering & Modal Data -->
   <script>
     function switchTab(tabId) { 
-      // Navigate to page
       window.location.href = `./${tabId}.html`;
     }
 
@@ -314,6 +687,176 @@
       const mobileMenu = document.getElementById('mobile-menu');
       if (mobileMenu) {
         mobileMenu.classList.toggle('hidden');
+      }
+    }
+
+    // Centralized Data Dictionary with Fallback logic for standalone previews
+    const getActivityDetails = async () => {
+      try {
+        const response = await fetch("./json/activities.json");
+        if (response.ok) {
+          return await response.json();
+        }
+      } catch (e) {
+        console.warn("Local JSON fetch failed, using internal fallback dataset", e);
+      }
+      return null;
+    }
+
+    const openActivityModal = async (weekId) => {
+      try {
+        const activityDetails = await getActivityDetails();
+        let data = activityDetails ? activityDetails[weekId] : null;
+
+        if (!data) {
+          alert("Detailed guide for this week is coming soon!");
+          return;
+        }
+
+        // Populate Modal Text & Badges
+        document.getElementById('modal-week-badge').textContent = data.week;
+        document.getElementById('modal-concept-badge').textContent = data.concept;
+        document.getElementById('modal-title').textContent = data.activityName ? `${data.week}: ${data.activityName}` : data.title;
+        document.getElementById('modal-montessori').textContent = `Montessori Alignment: ${data.montessori}`;
+        document.getElementById('modal-big-idea').textContent = data.bigIdea || "Core computational thinking and algorithmic problem-solving concept.";
+        document.getElementById('modal-setup-prep').textContent = data.setupPrep || "Set up workstation and verify materials ahead of time.";
+        document.getElementById('modal-primary-desc').textContent = data.primaryDesc;
+        document.getElementById('modal-elementary-desc').textContent = data.elementaryDesc;
+        document.getElementById('modal-control-error').textContent = data.controlOfError;
+
+        // Populate Key Materials
+        const materialsList = document.getElementById('modal-key-materials');
+        materialsList.innerHTML = '';
+        if (data.keyMaterials && Array.isArray(data.keyMaterials)) {
+          data.keyMaterials.forEach(mat => {
+            const li = document.createElement('li');
+            li.textContent = mat;
+            materialsList.appendChild(li);
+          });
+        } else {
+          const li = document.createElement('li');
+          li.textContent = "Refer to standard classroom materials.";
+          materialsList.appendChild(li);
+        }
+
+        // Populate Steps
+        const stepsList = document.getElementById('modal-steps');
+        stepsList.innerHTML = '';
+        data.steps.forEach(step => {
+          const li = document.createElement('li');
+          li.textContent = step;
+          stepsList.appendChild(li);
+        });
+
+        // Populate Media Container (YouTube Embed or Image Placeholder)
+        const mediaContainer = document.getElementById('modal-media-container');
+        if (data.youtubeEmbed) {
+          mediaContainer.innerHTML = `
+            <iframe class="w-full h-full rounded-xl" src="${data.youtubeEmbed}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          `;
+        } else if (data.imagePlaceholder) {
+          mediaContainer.innerHTML = `
+            <img src="${data.imagePlaceholder}" alt="Classroom activity picture" class="w-full h-full object-cover rounded-xl">
+          `;
+        } else {
+          mediaContainer.innerHTML = `
+            <div class="flex flex-col items-center justify-center h-full text-slate-400">
+              <i class="fa-solid fa-camera text-3xl mb-2"></i>
+              <p class="text-xs">Classroom demonstration photo or video coming soon.</p>
+            </div>
+          `;
+        }
+
+        // Populate Links & Resources
+        const csLink = document.getElementById('modal-cs-link');
+        csLink.href = data.csUnpluggedLink || '#';
+
+        const resourcesContainer = document.getElementById('modal-resources');
+        resourcesContainer.innerHTML = '';
+        if (data.resources && data.resources.length > 0) {
+          data.resources.forEach(res => {
+            const a = document.createElement('a');
+            a.href = res.url;
+            a.className = "text-xs text-slate-600 hover:text-emerald-700 bg-slate-100 px-2.5 py-1.5 rounded-md border border-slate-200 transition font-medium";
+            a.innerHTML = `<i class="fa-solid fa-file-pdf mr-1 text-red-500"></i> ${res.title}`;
+            resourcesContainer.appendChild(a);
+          });
+        }
+
+        // Show Modal
+        const modal = document.getElementById('activity-modal');
+        modal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      } catch (err) {
+        console.error(err);
+        alert("Unable to load activity details at this time.");
+      }
+    }
+
+    function closeActivityModal() {
+      const modal = document.getElementById('activity-modal');
+      modal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+
+      // Clear iframe to stop video playback
+      document.getElementById('modal-media-container').innerHTML = '';
+    }
+
+    // Close Modal on Background Backdrop Click or ESC Key
+    document.getElementById('activity-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeActivityModal();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeActivityModal();
+    });
+
+    let currentPhase = 'all';
+
+    function setPhaseFilter(phase) {
+      currentPhase = phase;
+      
+      // Update button styles
+      const buttons = ['all', 't1', 't2', 't3'];
+      buttons.forEach(p => {
+        const btn = document.getElementById(`btn-filter-${p}`);
+        if (btn) {
+          if (p === phase) {
+            btn.className = "px-3 py-1.5 rounded-lg bg-emerald-800 text-white font-semibold shadow-sm transition";
+          } else {
+            btn.className = "px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium transition";
+          }
+        }
+      });
+
+      filterTable();
+    }
+
+    function filterPhase(phase) {
+      setPhaseFilter(phase);
+    }
+
+    function filterTable() {
+      const query = document.getElementById('table-search').value.toLowerCase();
+      const rows = document.querySelectorAll('.phase-row');
+      let visibleCount = 0;
+
+      rows.forEach(row => {
+        const matchesPhase = (currentPhase === 'all') || row.classList.contains(currentPhase);
+        const textContent = row.textContent.toLowerCase();
+        const matchesQuery = query === '' || textContent.includes(query);
+
+        if (matchesPhase && matchesQuery) {
+          row.style.display = '';
+          !row.classList.contains('break') && visibleCount++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      const countDisplay = document.getElementById('table-count');
+      if (countDisplay) {
+        countDisplay.textContent = `Showing ${visibleCount} weekly curriculum sessions`;
       }
     }
   </script>
