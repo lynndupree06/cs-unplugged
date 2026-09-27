@@ -6,21 +6,7 @@
   <title>Student Assessment Guide | Smart Start Montessori CS Unplugged</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-    body { font-family: 'Inter', sans-serif; }
-    .nav-tab-active { 
-      border-bottom: 3px solid #f59e0b; 
-      color: #fef3c7; 
-      font-weight: 700; 
-      background-color: rgba(255,255,255,0.08); 
-    }
-    .plane-tab.active {
-      background-color: #065f46;
-      color: #ffffff;
-      border-color: #f59e0b;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
 
@@ -30,19 +16,14 @@
       <div class="flex items-center justify-between h-20">
         
         <!-- Brand Info -->
-        <a href="index.html" class="flex items-center space-x-3 group">
-          <div class="w-10 h-10 rounded-xl bg-amber-500 text-emerald-950 font-black flex items-center justify-center text-xl shadow-md group-hover:bg-amber-400 transition">
-            CS
-          </div>
+        <div class="flex items-center space-x-3">
           <div>
             <div class="flex items-center gap-2">
-              <span class="text-xs text-emerald-300 font-medium tracking-wide">Smart Start Montessori</span>
+              <span class="text-xs text-emerald-300 hidden md:inline">Smart Start Montessori</span>
             </div>
-            <h1 class="text-lg md:text-xl font-extrabold tracking-tight text-white group-hover:text-amber-200 transition">
-              CS Unplugged Educator Hub
-            </h1>
+            <h1 class="text-lg md:text-xl font-extrabold tracking-tight text-white">CS Unplugged Educator Hub</h1>
           </div>
-        </a>
+        </div>
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden lg:flex items-center space-x-1 text-sm font-medium">
@@ -55,10 +36,10 @@
           <a href="assessment.html" class="nav-tab-active px-3 py-2 rounded-t-lg transition hover:bg-emerald-800">
             <i class="fa-solid fa-chart-line mr-1.5 text-xs"></i>Assessment Guide
           </a>
-         <!--  <a href="transparent-classroom.html" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
+          <a href="tc-integration.html" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
             <i class="fa-solid fa-folder-tree mr-1.5 text-xs"></i>Transparent Classroom
           </a>
-          <a href="scratch-bridge.html" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
+          <!--  <a href="scratch-bridge.html" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
             <i class="fa-solid fa-code mr-1.5 text-xs"></i>Digital Bridge
           </a>
           <a href="logistics-resources.html" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">

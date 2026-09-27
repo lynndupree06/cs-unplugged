@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+.nav-tab-active { 
+    border-bottom: 3px solid #f59e0b; 
+    color: #fef3c7; 
+    font-weight: 700; 
+    background-color: rgba(255,255,255,0.08); 
+}
+
+.page-section { 
+    display: none; 
+}
+
+.page-section.active { 
+    display: block; 
+}
+
+.plane-tab.active {
+  background-color: #065f46;
+  color: #ffffff;
+  border-color: #f59e0b;
+}

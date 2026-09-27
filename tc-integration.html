@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Start Montessori - CS Unplugged Teacher & Admin Hub</title>
+  <title>CS Unplugged - Transparent Classroom Setup</title>
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-    body { font-family: 'Inter', sans-serif; }
-    .nav-tab-active { border-bottom: 3px solid #f59e0b; color: #fef3c7; font-weight: 700; background-color: rgba(255,255,255,0.08); }
-    .page-section { display: none; }
-    .page-section.active { display: block; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+<body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col font-sans">
 
-  <!-- Header & Main Site Navigation -->
+  <!-- Header & Navigation Bar -->
   <header class="bg-emerald-900 text-white shadow-xl sticky top-0 z-50 border-b-4 border-amber-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
@@ -33,24 +29,24 @@
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden lg:flex items-center space-x-1 text-sm font-medium">
-          <button onclick="switchTab('index')" id="tab-home" class="px-3 py-2 rounded-t-lg transition hover:bg-emerald-800">
+          <a href="index.html" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
             <i class="fa-solid fa-house mr-1.5 text-xs"></i>Home
-          </button>
-          <button onclick="switchTab('curriculum')" id="tab-curriculum" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
+          </a>
+          <a href="curriculum.html" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
             <i class="fa-solid fa-book-open mr-1.5 text-xs"></i>Scope & Sequence
-          </button>
-          <button onclick="switchTab('assessment')" id="tab-assessment" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
+          </a>
+          <a href="assessment.html" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
             <i class="fa-solid fa-chart-line mr-1.5 text-xs"></i>Assessment Guide
-          </button>
-          <button onclick="switchTab('tc-integration')" id="tab-tc-integration" class="nav-tab-active px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
+          </a>
+          <a href="tc-integration.html" class="nav-tab-active px-3 py-2 rounded-t-lg transition hover:bg-emerald-800">
             <i class="fa-solid fa-folder-tree mr-1.5 text-xs"></i>Transparent Classroom
-          </button>
-          <button onclick="switchTab('digital-bridge')" id="tab-digital-bridge" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
+          </a>
+          <!-- <button onclick="switchTab('digital-bridge')" id="tab-digital-bridge" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
             <i class="fa-solid fa-code mr-1.5 text-xs"></i>Scratch & Bridge
           </button>
           <button onclick="switchTab('logistics')" id="tab-logistics" class="px-3 py-2 rounded-t-lg transition text-emerald-200 hover:text-white hover:bg-emerald-800">
             <i class="fa-solid fa-boxes-packing mr-1.5 text-xs"></i>Hardware & Admin
-          </button>
+          </button> -->
         </nav>
 
         <!-- Mobile Menu Button -->
@@ -65,57 +61,80 @@
 
     <!-- Mobile Dropdown Navigation -->
     <div id="mobile-menu" class="hidden lg:hidden bg-emerald-950 border-t border-emerald-800 px-4 py-3 space-y-2 text-sm font-medium">
-      <button onclick="switchTab('index')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Home / Dashboard</button>
-      <button onclick="switchTab('curriculum')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Scope & Sequence</button>
-      <button onclick="switchTab('assessment')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Student Assessment Guide</button>
-      <button onclick="switchTab('tc-integration')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Transparent Classroom Setup</button>
-      <button onclick="switchTab('digital-bridge')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Scratch & Applied Coding Bridge</button>
-      <button onclick="switchTab('logistics')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Hardware & Admin Resources</button>
+      <a href="index.html" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Home / Dashboard</a>
+      <a href="curriculum.html" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Scope & Sequence</a>
+      <a href="assessment.html" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Student Assessment Guide</a>
+      <a href="tc-integration.html" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Transparent Classroom Setup</a>
+      <!-- <button onclick="switchTab('digital-bridge')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Scratch & Applied Coding Bridge</button>
+      <button onclick="switchTab('logistics')" class="block w-full text-left px-3 py-2 rounded text-emerald-100 hover:bg-emerald-800">Hardware & Admin Resources</button> -->
     </div>
   </header>
 
-  <!-- Main Content Body -->
-  <main class="max-w-7xl mx-auto px-6 py-10 space-y-12">
+  <!-- Main Content Area -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 space-y-8">
 
-    <!-- Overview & Steps Section -->
-    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
-      <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+    <!-- Page Banner Header -->
+    <div class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-900 rounded-2xl p-6 md:p-8 text-white shadow-md">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-700/60 text-emerald-200 text-xs font-semibold uppercase tracking-wider mb-3 border border-emerald-500/30">
+          <i class="fa-solid fa-folder-tree"></i> Admin & Guide Portal Setup
+        </div>
+        <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-2">
+          Transparent Classroom Curriculum Integration
+        </h1>
+        <p class="text-emerald-100 text-sm md:text-base leading-relaxed">
+          Step-by-step instructions for establishing the CS Unplugged curriculum structure, shelf activities, and 3-point progression tracking inside Transparent Classroom.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 1: Overview & Steps Section -->
+    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
         <span class="w-8 h-8 bg-emerald-100 text-emerald-800 rounded-lg flex items-center justify-center font-extrabold text-sm">1</span>
         How to Add CS Unplugged to Transparent Classroom
       </h2>
-      <p class="text-slate-600 mb-6 leading-relaxed">
-        Transparent Classroom allows you to define custom Subjects, Sub-Categories, and Lessons that reflect Montessori scope and sequences. Follow these steps to set up the CS Unplugged curriculum so guides can track progress, record observations, and generate parent reports.
+      <p class="text-slate-600 mb-6 leading-relaxed text-sm md:text-base">
+        Transparent Classroom allows guides to establish custom Subjects, Sub-Categories, and Shelf Lessons that reflect our 24-week Montessori CS Unplugged sequence. Follow these steps to set up the updated curriculum so guides can seamlessly track progress, document observations, and share photo updates with parents.
       </p>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl">
-          <div class="font-bold text-emerald-800 text-lg mb-2">Step 1: Admin Setup</div>
-          <p class="text-sm text-slate-600">Navigate to <strong>Admin &gt; Lessons</strong>. Select your target level (e.g., <em>Lower Elementary</em> or <em>Upper Elementary</em>).</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl">
+          <div class="font-bold text-emerald-800 text-base mb-1.5 flex items-center gap-2">
+            <i class="fa-solid fa-gear text-xs text-emerald-600"></i> Step 1: Admin Setup
+          </div>
+          <p class="text-xs md:text-sm text-slate-600 leading-relaxed">Navigate to <strong>Admin &gt; Lessons</strong>. Select your level (<em>Primary / 3-6</em> or <em>Elementary / 6-12</em>).</p>
         </div>
-        <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl">
-          <div class="font-bold text-emerald-800 text-lg mb-2">Step 2: Create Subject</div>
-          <p class="text-sm text-slate-600">Add a new Subject titled <strong>"Computer Science"</strong> or <strong>"Cosmic Education: CS Unplugged"</strong>.</p>
+        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl">
+          <div class="font-bold text-emerald-800 text-base mb-1.5 flex items-center gap-2">
+            <i class="fa-solid fa-folder-plus text-xs text-emerald-600"></i> Step 2: Create Subject
+          </div>
+          <p class="text-xs md:text-sm text-slate-600 leading-relaxed">Add a new Subject titled <strong>"Cosmic Education: CS Unplugged"</strong> or <strong>"Computer Science"</strong>.</p>
         </div>
-        <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl">
-          <div class="font-bold text-emerald-800 text-lg mb-2">Step 3: Add Sub-Categories</div>
-          <p class="text-sm text-slate-600">Create three core sub-categories: <strong>Algorithms</strong>, <strong>Data Representation</strong>, and <strong>Information Theory</strong> (plus optional <em>Applied Coding</em>).</p>
+        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl">
+          <div class="font-bold text-emerald-800 text-base mb-1.5 flex items-center gap-2">
+            <i class="fa-solid fa-sitemap text-xs text-emerald-600"></i> Step 3: Add Sub-Categories
+          </div>
+          <p class="text-xs md:text-sm text-slate-600 leading-relaxed">Create four sub-categories: <strong>1. Algorithms</strong>, <strong>2. Data Representation</strong>, <strong>3. Information Theory</strong>, and <strong>4. Applied Capstone</strong>.</p>
         </div>
-        <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl">
-          <div class="font-bold text-emerald-800 text-lg mb-2">Step 4: Input Lessons</div>
-          <p class="text-sm text-slate-600">Enter individual shelf activities with descriptions, materials, control of error, and tracking stages (<em>Presented, Practicing, Mastered</em>).</p>
+        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl">
+          <div class="font-bold text-emerald-800 text-base mb-1.5 flex items-center gap-2">
+            <i class="fa-solid fa-list-check text-xs text-emerald-600"></i> Step 4: Input Lessons
+          </div>
+          <p class="text-xs md:text-sm text-slate-600 leading-relaxed">Enter individual shelf activities with descriptions, materials, control of error, and tracking stages (<em>Presented, Practicing, Mastered</em>).</p>
         </div>
       </div>
     </section>
 
-    <!-- Sub-Categories & Activity Matrix -->
-    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+    <!-- Section 2: Sub-Categories & Activity Matrix -->
+    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
-          <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-3">
+          <h2 class="text-xl md:text-2xl font-bold text-slate-900 flex items-center gap-3">
             <span class="w-8 h-8 bg-emerald-100 text-emerald-800 rounded-lg flex items-center justify-center font-extrabold text-sm">2</span>
-            Curriculum Map & Sub-Category Breakdown
+            24-Week Curriculum Map &amp; Transparent Classroom Matrix
           </h2>
-          <p class="text-slate-600 text-sm mt-1">Complete hierarchy of sub-categories, specific shelf works, and target age levels for Transparent Classroom.</p>
+          <p class="text-slate-600 text-xs md:text-sm mt-1">Complete breakdown of sub-categories, shelf activities, target age levels, and Montessori direct connections for the school year.</p>
         </div>
       </div>
 
@@ -124,301 +143,1015 @@
         <table class="w-full text-left border-collapse">
           <thead>
             <tr class="bg-slate-100 text-slate-700 uppercase text-xs tracking-wider font-semibold">
-              <th class="py-3.5 px-4 border-b">Sub-Category</th>
-              <th class="py-3.5 px-4 border-b">Shelf Activity / Lesson Name</th>
-              <th class="py-3.5 px-4 border-b">Target Level</th>
-              <th class="py-3.5 px-4 border-b">Montessori Direct Connection</th>
-              <th class="py-3.5 px-4 border-b">Core CS Concept</th>
+              <th class="py-3 px-4 border-b">Sub-Category</th>
+              <th class="py-3 px-4 border-b">Shelf Activity / Lesson Name</th>
+              <th class="py-3 px-4 border-b">Target Level</th>
+              <th class="py-3 px-4 border-b">Montessori Direct Connection</th>
+              <th class="py-3 px-4 border-b">Core CS Concept</th>
             </tr>
           </thead>
-          <tbody class="divide-y divide-slate-200 text-sm">
-            <!-- Algorithms -->
+          <tbody class="divide-y divide-slate-200 text-xs md:text-sm">
+            
+            <!-- Trimester 1: Algorithms -->
             <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-bold text-emerald-900 bg-emerald-50/50" rowspan="3">1. Algorithms & Procedures<br><span class="text-xs font-normal text-slate-500">(The Robot Shelf)</span></td>
-              <td class="py-3.5 px-4 font-semibold text-slate-800">1.1 Kidbots: Path Execution</td>
-              <td class="py-3.5 px-4"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs">Primary / Lower El</span></td>
-              <td class="py-3.5 px-4">Practical Life (Sequencing & Spatial Order)</td>
-              <td class="py-3.5 px-4">Algorithms, Precise Instructions, Debugging</td>
+              <td class="py-3.5 px-4 font-bold text-emerald-900 bg-emerald-50/40" rowspan="5">
+                1. Algorithms &amp; Procedures<br>
+                <span class="text-xs font-normal text-slate-500">(Trimester 1: The Robot Shelf)</span>
+              </td>
+              <td class="py-3.5 px-4 font-semibold text-slate-800">1.1 The Great Story &amp; Jam Sandwich Robot</td>
+              <td class="py-3.5 px-4"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Primary &amp; Elementary</span></td>
+              <td class="py-3.5 px-4">Practical Life: Grace &amp; Courtesy, Sequence of Work</td>
+              <td class="py-3.5 px-4">Sequential Logic, Literal Execution, Debugging</td>
             </tr>
             <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-semibold text-slate-800">1.2 Rescue Mission (Marching Orders)</td>
-              <td class="py-3.5 px-4"><span class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded text-xs">Lower El / Upper El</span></td>
-              <td class="py-3.5 px-4">Sensorial / Geometry Pattern Work</td>
-              <td class="py-3.5 px-4">Loops, Functions, Code Optimization</td>
+              <td class="py-3.5 px-4 font-semibold text-slate-800">1.2 Kidbots Part 1: Floor Grid &amp; Arrows</td>
+              <td class="py-3.5 px-4"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Primary / Lower El</span></td>
+              <td class="py-3.5 px-4">Spatial Awareness &amp; Spatial Orientation</td>
+              <td class="py-3.5 px-4">Directional Cards, Precise Instructions, Program Execution</td>
             </tr>
             <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-semibold text-slate-800">1.3 Real-Life Algorithms: Plant a Seed</td>
-              <td class="py-3.5 px-4"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs">Primary / Lower El</span></td>
-              <td class="py-3.5 px-4">Botany / Practical Life Practical Sequences</td>
-              <td class="py-3.5 px-4">Decomposition, Flowcharts, Step Analysis</td>
-            </tr>
-
-            <!-- Data Representation -->
-            <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-bold text-emerald-900 bg-emerald-50/50" rowspan="4">2. Data Representation<br><span class="text-xs font-normal text-slate-500">(The Code Shelf)</span></td>
-              <td class="py-3.5 px-4 font-semibold text-slate-800">2.1 Binary Cards & Base-2 System</td>
-              <td class="py-3.5 px-4"><span class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded text-xs">Lower El / Upper El</span></td>
-              <td class="py-3.5 px-4">Math: Golden Beads & Stamp Game (Base Systems)</td>
-              <td class="py-3.5 px-4">Binary Digits (Bits), Base-2, Exponential Place Value</td>
+              <td class="py-3.5 px-4 font-semibold text-slate-800">1.3 Kidbots Part 2: Obstacles &amp; Debugging</td>
+              <td class="py-3.5 px-4"><span class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Lower El / Upper El</span></td>
+              <td class="py-3.5 px-4">Sensorial Geometry &amp; Control of Error</td>
+              <td class="py-3.5 px-4">Systematic Bug Identification, Path Optimization</td>
             </tr>
             <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-semibold text-slate-800">2.2 Image Representation (Pixel Art)</td>
-              <td class="py-3.5 px-4"><span class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded text-xs">Lower El / Upper El</span></td>
-              <td class="py-3.5 px-4">Geometry Grid Work & Design Patterns</td>
-              <td class="py-3.5 px-4">Pixels, Bitmap Graphics, Color Codes</td>
+              <td class="py-3.5 px-4 font-semibold text-slate-800">1.4 Rescue Mission: Loops &amp; Subroutines</td>
+              <td class="py-3.5 px-4"><span class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Lower El / Upper El</span></td>
+              <td class="py-3.5 px-4">Repetition of Work &amp; Pattern Recognition</td>
+              <td class="py-3.5 px-4">Repeat Loops, Functions, Algorithmic Efficiency</td>
             </tr>
             <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-semibold text-slate-800">2.3 Run-Length Encoding (Text Compression)</td>
-              <td class="py-3.5 px-4"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded text-xs">Upper El</span></td>
-              <td class="py-3.5 px-4">Language: Shorthand & Grammar Symbols</td>
-              <td class="py-3.5 px-4">Data Compression, Lossless Efficiency</td>
-            </tr>
-            <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-semibold text-slate-800">2.4 Binary Bracelets & Keychains</td>
-              <td class="py-3.5 px-4"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs">Primary through Upper El</span></td>
-              <td class="py-3.5 px-4">Sensorial Craft Work & Fine Motor Control</td>
-              <td class="py-3.5 px-4">ASCII / 5-Bit Alphabet Character Encoding</td>
+              <td class="py-3.5 px-4 font-semibold text-slate-800">1.5 Conditional Logic &amp; Decision Paths</td>
+              <td class="py-3.5 px-4"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Primary &amp; Elementary</span></td>
+              <td class="py-3.5 px-4">Sensorial Categorization &amp; Decision Making</td>
+              <td class="py-3.5 px-4">IF/THEN Rules, Branching Paths, Condition Evaluation</td>
             </tr>
 
-            <!-- Information Theory -->
+            <!-- Trimester 1 & 2: Data Representation -->
             <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-bold text-emerald-900 bg-emerald-50/50" rowspan="3">3. Information Theory<br><span class="text-xs font-normal text-slate-500">(The Detective Shelf)</span></td>
-              <td class="py-3.5 px-4 font-semibold text-slate-800">3.1 Outdoor Sorting Networks</td>
-              <td class="py-3.5 px-4"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs">All Elementary</span></td>
-              <td class="py-3.5 px-4">Sensorial: Grading & Ordering Materials</td>
+              <td class="py-3.5 px-4 font-bold text-emerald-900 bg-emerald-50/40" rowspan="5">
+                2. Data Representation<br>
+                <span class="text-xs font-normal text-slate-500">(Trimester 1 &amp; 2: The Code Shelf)</span>
+              </td>
+              <td class="py-3.5 px-4 font-semibold text-slate-800">2.1 Binary Numbers: Dots, Switches &amp; Base-2</td>
+              <td class="py-3.5 px-4"><span class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Lower El / Upper El</span></td>
+              <td class="py-3.5 px-4">Math: Golden Beads &amp; Stamp Game (Base Systems)</td>
+              <td class="py-3.5 px-4">Bits, Binary Place Value, Exponential Base-2</td>
+            </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-4 font-semibold text-slate-800">2.2 Binary Alphabet &amp; Bead Bracelets</td>
+              <td class="py-3.5 px-4"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Primary through Upper El</span></td>
+              <td class="py-3.5 px-4">Language Symbol Association &amp; Fine Motor Craft</td>
+              <td class="py-3.5 px-4">5-Bit Encoding, Character Maps, ASCII Logic</td>
+            </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-4 font-semibold text-slate-800">2.3 Image Representation (Pixel Art &amp; Bitmaps)</td>
+              <td class="py-3.5 px-4"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Primary &amp; Elementary</span></td>
+              <td class="py-3.5 px-4">Geometry Grid Work &amp; Sensorial Gradation</td>
+              <td class="py-3.5 px-4">Pixels, Bitmap Graphics, Color Coding</td>
+            </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-4 font-semibold text-slate-800">2.4 Data Compression: Run-Length Encoding</td>
+              <td class="py-3.5 px-4"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Upper El</span></td>
+              <td class="py-3.5 px-4">Math Abbreviation &amp; Efficient Notation</td>
+              <td class="py-3.5 px-4">Lossless Compression, Data Squeezing Ratios</td>
+            </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-4 font-semibold text-slate-800">2.5 Text &amp; Pattern Compression</td>
+              <td class="py-3.5 px-4"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Upper El</span></td>
+              <td class="py-3.5 px-4">Language: Grammar Analysis &amp; Sentence Diagramming</td>
+              <td class="py-3.5 px-4">Dictionary Keys, Pointer Boxes, LZW Compression</td>
+            </tr>
+
+            <!-- Trimester 2: Information Theory, Search & Security -->
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-4 font-bold text-emerald-900 bg-emerald-50/40" rowspan="6">
+                3. Information Theory &amp; Search<br>
+                <span class="text-xs font-normal text-slate-500">(Trimester 2: The Detective Shelf)</span>
+              </td>
+              <td class="py-3.5 px-4 font-semibold text-slate-800">3.1 Parity Magic: Error Detection</td>
+              <td class="py-3.5 px-4"><span class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Lower El / Upper El</span></td>
+              <td class="py-3.5 px-4">Math: Odd &amp; Even Numbers, Checking Operations</td>
+              <td class="py-3.5 px-4">Parity Bits, Error Detection, Matrix Grid Logic</td>
+            </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-4 font-semibold text-slate-800">3.2 Parity Magic: Checksums &amp; Reliability</td>
+              <td class="py-3.5 px-4"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Upper El</span></td>
+              <td class="py-3.5 px-4">Mathematical Checking &amp; Proofing Operations</td>
+              <td class="py-3.5 px-4">Transmission Verification, Checksum Calculations</td>
+            </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-4 font-semibold text-slate-800">3.3 Linear vs. Binary Search</td>
+              <td class="py-3.5 px-4"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Primary &amp; Elementary</span></td>
+              <td class="py-3.5 px-4">Sensorial Gradation &amp; Systematic Ordering</td>
+              <td class="py-3.5 px-4">Linear Search, Binary Search, Logarithmic Efficiency</td>
+            </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-4 font-semibold text-slate-800">3.4 20 Questions &amp; Decision Trees</td>
+              <td class="py-3.5 px-4"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Primary &amp; Elementary</span></td>
+              <td class="py-3.5 px-4">Zoology/Botany Branching Taxonomy Charts</td>
+              <td class="py-3.5 px-4">Binary Search Trees, Classification, Entropy</td>
+            </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-4 font-semibold text-slate-800">3.5 Outdoor Sorting Networks</td>
+              <td class="py-3.5 px-4"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">All Elementary</span></td>
+              <td class="py-3.5 px-4">Physical Movement, Grace &amp; Courtesy, Order</td>
               <td class="py-3.5 px-4">Parallel Processing, Sorting Algorithms, Network Flow</td>
             </tr>
             <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-semibold text-slate-800">3.2 Parity Magic: Error Detection</td>
-              <td class="py-3.5 px-4"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded text-xs">Upper El</span></td>
-              <td class="py-3.5 px-4">Math: Odd & Even Numbers / Checking Work</td>
-              <td class="py-3.5 px-4">Error Detection, Checksums, Parity Bits</td>
-            </tr>
-            <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-semibold text-slate-800">3.3 Cryptography & Caesar Cipher</td>
-              <td class="py-3.5 px-4"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded text-xs">Upper El</span></td>
-              <td class="py-3.5 px-4">History of Language & Written Codes</td>
-              <td class="py-3.5 px-4">Cybersecurity, Modulo Math, Encryption Key</td>
+              <td class="py-3.5 px-4 font-semibold text-slate-800">3.6 Cryptography &amp; Caesar Cipher Modulo Math</td>
+              <td class="py-3.5 px-4"><span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Upper El</span></td>
+              <td class="py-3.5 px-4">History of Language (4th Great Lesson) &amp; Clock Math</td>
+              <td class="py-3.5 px-4">Cybersecurity, Caesar Wheels, Modulo 26 Arithmetic</td>
             </tr>
 
-            <!-- Applied Digital Bridge -->
+            <!-- Trimester 3: Applied Capstone -->
             <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-bold text-emerald-900 bg-emerald-50/50" rowspan="3">4. Applied Coding & Bridge<br><span class="text-xs font-normal text-slate-500">(The Innovation Lab)</span></td>
-              <td class="py-3.5 px-4 font-semibold text-slate-800">4.1 ScratchJr Interactive Logic</td>
-              <td class="py-3.5 px-4"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs">Primary / Lower El</span></td>
-              <td class="py-3.5 px-4">Moveable Alphabet & Visual Storytelling</td>
-              <td class="py-3.5 px-4">Icon-based Syntax, Triggers, Message Envelopes</td>
+              <td class="py-3.5 px-4 font-bold text-emerald-900 bg-emerald-50/40" rowspan="4">
+                4. Applied Coding &amp; Capstone<br>
+                <span class="text-xs font-normal text-slate-500">(Trimester 3: Innovation Lab)</span>
+              </td>
+              <td class="py-3.5 px-4 font-semibold text-slate-800">4.1 Capstone Planning &amp; Storyboarding</td>
+              <td class="py-3.5 px-4"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Primary &amp; Elementary</span></td>
+              <td class="py-3.5 px-4">Moveable Alphabet &amp; Story Writing Layout</td>
+              <td class="py-3.5 px-4">Pseudocode, Flowcharts, Program Mapping</td>
             </tr>
             <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-semibold text-slate-800">4.2 Scratch Block Programming</td>
-              <td class="py-3.5 px-4"><span class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded text-xs">Lower El / Upper El</span></td>
-              <td class="py-3.5 px-4">Grammar Symbols (Syntax) & Applied Math</td>
-              <td class="py-3.5 px-4">Block Syntax, Local/Global Variables, Conditionals</td>
+              <td class="py-3.5 px-4 font-semibold text-slate-800">4.2 Digital Interface Setup (Scratch / ScratchJr)</td>
+              <td class="py-3.5 px-4"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Primary &amp; Elementary</span></td>
+              <td class="py-3.5 px-4">Sensorial Visual Art &amp; Layout Precision</td>
+              <td class="py-3.5 px-4">Sprite Design, Coordinate Staging, Event Triggers</td>
             </tr>
             <tr class="hover:bg-slate-50/80">
-              <td class="py-3.5 px-4 font-semibold text-slate-800">4.3 Ozobot Evo Robotics (Optional)</td>
-              <td class="py-3.5 px-4"><span class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded text-xs">Lower El / Upper El</span></td>
-              <td class="py-3.5 px-4">Geometry Measurement & Physical Mapping</td>
-              <td class="py-3.5 px-4">Color-Code Logic, Hardware Sensors, Physical Execution</td>
+              <td class="py-3.5 px-4 font-semibold text-slate-800">4.3 Digital Logic: Variables &amp; Conditionals</td>
+              <td class="py-3.5 px-4"><span class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">Lower El / Upper El</span></td>
+              <td class="py-3.5 px-4">Grammar Symbols (Syntax) &amp; Applied Math</td>
+              <td class="py-3.5 px-4">Local/Global Variables, Conditional Loops, Collision Logic</td>
             </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-4 font-semibold text-slate-800">4.4 Peer Testing &amp; CS Living Museum Showcase</td>
+              <td class="py-3.5 px-4"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap">All Classrooms</span></td>
+              <td class="py-3.5 px-4">Community Peer Teaching &amp; Student Showcase</td>
+              <td class="py-3.5 px-4">Peer Testing, Edge-Case Debugging, User Presentation</td>
+            </tr>
+
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- Specific Copy-Paste Lesson Specs for Transparent Classroom -->
-    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
-      <h2 class="text-2xl font-bold text-slate-900 mb-2 flex items-center gap-3">
-        <span class="w-8 h-8 bg-emerald-100 text-emerald-800 rounded-lg flex items-center justify-center font-extrabold text-sm">3</span>
-        Transparent Classroom Copy & Paste Lesson Entries
-      </h2>
-      <p class="text-slate-600 text-sm mb-6">Use these pre-formatted fields when adding each lesson under <strong>Admin &gt; Lessons &gt; New Lesson</strong> in Transparent Classroom.</p>
-
-      <!-- Lesson Cards Accordion/Grid -->
-      <div class="space-y-6">
-
-        <!-- Lesson Entry 1 -->
-        <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50/50">
-          <div class="bg-slate-100 px-6 py-3 border-b border-slate-200 flex justify-between items-center">
-            <span class="font-bold text-emerald-900">Lesson Entry 1: Kidbots Path Execution</span>
-            <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Sub-Category: 1. Algorithms & Procedures</span>
-          </div>
-          <div class="p-6 grid md:grid-cols-2 gap-4 text-sm">
-            <div>
-              <p class="font-semibold text-slate-700">Lesson Title:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">Kidbots: Sequence & Debugging</p>
-
-              <p class="font-semibold text-slate-700">Description / Direct Aim:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">To write and execute a precise series of directional instructions (Forward, Left, Right) to navigate a floor grid. Teaches literal computer execution and debugging errors.</p>
-
-              <p class="font-semibold text-slate-700">Prerequisites:</p>
-              <p class="bg-white border rounded p-2 text-slate-800">Spatial left/right orientation, 3x3 grid movement.</p>
-            </div>
-            <div>
-              <p class="font-semibold text-slate-700">Materials Required:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">5x5 Floor Grid (tape/mat), Directional Arrow Cards (Forward, Turn Left, Turn Right), Target Object (e.g., Golden Bead), Obstacle Cards.</p>
-
-              <p class="font-semibold text-slate-700">Control of Error:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">The "Robot" lands off-target or collides with an obstacle card when executing the code literally.</p>
-
-              <p class="font-semibold text-slate-700">Assessment Stages:</p>
-              <p class="bg-white border rounded p-2 text-slate-800">1. Presented (Watches demo)<br>2. Practicing (Writes simple 3-step path)<br>3. Mastered (Programs around obstacles & fixes bugs)</p>
-            </div>
-          </div>
+    <!-- Section 3: Interactive Accordion / Tabbed Lesson Entry Explorer -->
+    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-slate-900 flex items-center gap-3">
+            <span class="w-8 h-8 bg-emerald-100 text-emerald-800 rounded-lg flex items-center justify-center font-extrabold text-sm">3</span>
+            Transparent Classroom Lesson Explorer
+          </h2>
+          <p class="text-slate-600 text-xs md:text-sm mt-1">
+            Click on any of the 20 shelf activities below to expand its copy-and-paste fields for Transparent Classroom (<strong>Admin &gt; Lessons &gt; New Lesson</strong>).
+          </p>
         </div>
-
-        <!-- Lesson Entry 2 -->
-        <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50/50">
-          <div class="bg-slate-100 px-6 py-3 border-b border-slate-200 flex justify-between items-center">
-            <span class="font-bold text-emerald-900">Lesson Entry 2: Binary Cards & Base-2 Systems</span>
-            <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Sub-Category: 2. Data Representation</span>
-          </div>
-          <div class="p-6 grid md:grid-cols-2 gap-4 text-sm">
-            <div>
-              <p class="font-semibold text-slate-700">Lesson Title:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">Binary Numbers: Base-2 Place Value</p>
-
-              <p class="font-semibold text-slate-700">Description / Direct Aim:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">To construct numbers using binary cards (1, 2, 4, 8, 16) by toggling cards ON (visible dots) or OFF (blank). Connects Base-10 decimal system to Base-2 digital logic.</p>
-
-              <p class="font-semibold text-slate-700">Prerequisites:</p>
-              <p class="bg-white border rounded p-2 text-slate-800">Understanding of addition, Base-10 Decimal System (Stamp Game / Golden Beads).</p>
-            </div>
-            <div>
-              <p class="font-semibold text-slate-700">Materials Required:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">Set of 5 Binary Cards (1, 2, 4, 8, 16 dots), Binary Command Cards, Paper/Pencil for notation.</p>
-
-              <p class="font-semibold text-slate-700">Control of Error:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">Sum of visible dots on front of active cards equals target number printed on back of challenge card.</p>
-
-              <p class="font-semibold text-slate-700">Assessment Stages:</p>
-              <p class="bg-white border rounded p-2 text-slate-800">1. Presented (Flips cards to show 1-15)<br>2. Practicing (Encodes given numbers)<br>3. Mastered (Encodes secret initial messages in binary)</p>
-            </div>
-          </div>
+        
+        <!-- Category Filter Buttons -->
+        <div class="flex flex-wrap gap-2 text-xs font-semibold">
+          <button onclick="filterTcCategory('all')" id="tc-btn-all" class="px-3 py-1.5 rounded-lg bg-emerald-800 text-white shadow-sm transition">
+            All Lessons (20)
+          </button>
+          <button onclick="filterTcCategory('cat1')" id="tc-btn-cat1" class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+            1. Algorithms (5)
+          </button>
+          <button onclick="filterTcCategory('cat2')" id="tc-btn-cat2" class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+            2. Data Rep. (5)
+          </button>
+          <button onclick="filterTcCategory('cat3')" id="tc-btn-cat3" class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+            3. Info Theory (6)
+          </button>
+          <button onclick="filterTcCategory('cat4')" id="tc-btn-cat4" class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+            4. Capstone (4)
+          </button>
         </div>
-
-        <!-- Lesson Entry 3 -->
-        <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50/50">
-          <div class="bg-slate-100 px-6 py-3 border-b border-slate-200 flex justify-between items-center">
-            <span class="font-bold text-emerald-900">Lesson Entry 3: Outdoor Sorting Networks</span>
-            <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Sub-Category: 3. Information Theory</span>
-          </div>
-          <div class="p-6 grid md:grid-cols-2 gap-4 text-sm">
-            <div>
-              <p class="font-semibold text-slate-700">Lesson Title:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">Sorting Networks: Parallel Processing</p>
-
-              <p class="font-semibold text-slate-700">Description / Direct Aim:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">To physically move through a chalk network, comparing values at nodes with peers. Teaches algorithmic efficiency, parallel processing, and comparative sorting.</p>
-
-              <p class="font-semibold text-slate-700">Prerequisites:</p>
-              <p class="bg-white border rounded p-2 text-slate-800">Number comparison (Greater than / Less than concept).</p>
-            </div>
-            <div>
-              <p class="font-semibold text-slate-700">Materials Required:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">Chalk Network on pavement (6 lanes), Number Cards 1-100, Stopwatches.</p>
-
-              <p class="font-semibold text-slate-700">Control of Error:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">Upon reaching the exit nodes, all participants hold up cards and are automatically lined up in ascending order.</p>
-
-              <p class="font-semibold text-slate-700">Assessment Stages:</p>
-              <p class="bg-white border rounded p-2 text-slate-800">1. Presented (Participates in walk-through)<br>2. Practicing (Executes comparison rule with verbal greeting)<br>3. Mastered (Facilitates team run / explains parallel sorting)</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Lesson Entry 4 -->
-        <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50/50">
-          <div class="bg-slate-100 px-6 py-3 border-b border-slate-200 flex justify-between items-center">
-            <span class="font-bold text-emerald-900">Lesson Entry 4: Binary Bracelets & Encoding</span>
-            <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Sub-Category: 2. Data Representation</span>
-          </div>
-          <div class="p-6 grid md:grid-cols-2 gap-4 text-sm">
-            <div>
-              <p class="font-semibold text-slate-700">Lesson Title:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">Binary Encoding: Craft & Cryptography</p>
-
-              <p class="font-semibold text-slate-700">Description / Direct Aim:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">To encode letters of the alphabet into 5-bit binary sequences using two bead colors (0 and 1) plus spacer beads. Demonstrates how computers store text in memory.</p>
-
-              <p class="font-semibold text-slate-700">Prerequisites:</p>
-              <p class="bg-white border rounded p-2 text-slate-800">Binary Cards completion, fine motor stringing ability.</p>
-            </div>
-            <div>
-              <p class="font-semibold text-slate-700">Materials Required:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">2 bead colors (OFF/ON), spacer beads, elastic cord/pipe cleaners, 5-Bit Binary Alphabet Key.</p>
-
-              <p class="font-semibold text-slate-700">Control of Error:</p>
-              <p class="bg-white border rounded p-2 text-slate-800 mb-3">Peer decodes the bracelet/keychain back into letters using the Binary Key.</p>
-
-              <p class="font-semibold text-slate-700">Assessment Stages:</p>
-              <p class="bg-white border rounded p-2 text-slate-800">1. Presented (Codes initial letter)<br>2. Practicing (Codes full name or word)<br>3. Mastered (Decodes peer work independently)</p>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </section>
 
-    <!-- Parent Reporting & Photo Updates Guide -->
-    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
-      <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-        <span class="w-8 h-8 bg-emerald-100 text-emerald-800 rounded-lg flex items-center justify-center font-extrabold text-sm">4</span>
-        Parent Communication & Observation Tags in Transparent Classroom
-      </h2>
-      <p class="text-slate-600 text-sm mb-6">When uploading photos or recording progress for parents, use these Montessori-aligned tags and captions to explain the educational value of unplugged CS activities.</p>
+      <!-- Quick Action Controls -->
+      <div class="flex items-center justify-between text-xs text-slate-500 mb-4 pb-3 border-b border-slate-100">
+        <span>Click an item to toggle fields</span>
+        <div class="flex gap-3">
+          <button onclick="expandAllTcAccordions()" class="hover:text-emerald-700 transition font-medium">
+            <i class="fa-solid fa-angles-down text-[10px] mr-1"></i> Expand All
+          </button>
+          <button onclick="collapseAllTcAccordions()" class="hover:text-emerald-700 transition font-medium">
+            <i class="fa-solid fa-angles-up text-[10px] mr-1"></i> Collapse All
+          </button>
+        </div>
+      </div>
 
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-emerald-50/60 border border-emerald-200 rounded-xl p-5">
-          <h3 class="font-bold text-emerald-950 mb-2">Sample Transparent Classroom Photo Caption 1</h3>
-          <p class="text-xs font-semibold text-emerald-800 mb-2">Activity: Outdoor Sorting Networks</p>
-          <p class="text-slate-700 text-sm italic mb-3">
-            "[Child's Name] participated in our 'Sorting Network' exercise today! While it looks like an outdoor game, the children are physically acting out a parallel processing algorithm used by modern supercomputers to sort data efficiently. [Child's Name] practiced comparing numbers, following logic paths, and communicating effectively at each node."
-          </p>
-          <div class="flex gap-2 text-xs">
-            <span class="bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded font-medium">#CSUnplugged</span>
-            <span class="bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded font-medium">#Algorithms</span>
-            <span class="bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded font-medium">#SensorialMath</span>
+      <!-- Accordion Container -->
+      <div class="space-y-3" id="tc-accordion-container">
+
+        <!-- 1.1 The Great Story & Jam Sandwich Robot -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat1">
+          <button onclick="toggleTcAccordion('tc-item-1')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">1.1</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">1.1 The Great Story &amp; Jam Sandwich Robot</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 1. Algorithms &amp; Procedures</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-1" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-1" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">1.1 The Great Story &amp; Jam Sandwich Robot</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To write literal, step-by-step instructions for an actor "Robot" to assemble a sandwich. Demonstrates literal execution, ambiguity in code, and systematic debugging.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Everyday task sequencing, verbal or written communication skills.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Sliced bread, jam/seed butter jar, butter knife, paper plates, wet wipes, index cards.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">The "Robot" actor literally follows instructions (e.g., placing unopened jar on bread if "open jar" step is missing).</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Watches live demonstration<br>
+                2. <strong>Practicing:</strong> Writes 5-step sandwich algorithm<br>
+                3. <strong>Mastered:</strong> Identifies missing steps and debugs code for 100% execution success
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="bg-emerald-50/60 border border-emerald-200 rounded-xl p-5">
-          <h3 class="font-bold text-emerald-950 mb-2">Sample Transparent Classroom Photo Caption 2</h3>
-          <p class="text-xs font-semibold text-emerald-800 mb-2">Activity: Binary Bracelets</p>
-          <p class="text-slate-700 text-sm italic mb-3">
-            "[Child's Name] created a 'Binary Name Keychain' today! Building on our work with base systems in math, [Child's Name] translated the letters of their name into 5-bit binary code (0s and 1s) using colored beads. This concrete activity demonstrates how computers store text and data in physical memory without using screens."
-          </p>
-          <div class="flex gap-2 text-xs">
-            <span class="bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded font-medium">#DataRepresentation</span>
-            <span class="bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded font-medium">#BinaryMath</span>
-            <span class="bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded font-medium">#PracticalLife</span>
+        <!-- 1.2 Kidbots Part 1: Floor Grid & Arrows -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat1">
+          <button onclick="toggleTcAccordion('tc-item-2')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">1.2</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">1.2 Kidbots Part 1: Floor Grid &amp; Arrows</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 1. Algorithms &amp; Procedures</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-2" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-2" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">1.2 Kidbots Part 1: Floor Grid &amp; Arrows</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To construct and execute directional arrow card sequences (Forward, Turn Left, Turn Right) guiding a peer "Bot" across a floor grid to a target object.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Spatial orientation (left/right awareness), basic grid movement.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">5x5 Floor Grid (tape/chalk), Directional Arrow Cards (Forward, Left, Right), target object.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">The "Robot" lands off-grid or misses the target when executing arrow cards literally.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Watches demo lesson<br>
+                2. <strong>Practicing:</strong> Programs 3-5 step path without obstacles<br>
+                3. <strong>Mastered:</strong> Writes multi-step directional path independently
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- 1.3 Kidbots Part 2: Obstacles & Debugging -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat1">
+          <button onclick="toggleTcAccordion('tc-item-3')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">1.3</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">1.3 Kidbots Part 2: Obstacles &amp; Debugging</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 1. Algorithms &amp; Procedures</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-3" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-3" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">1.3 Kidbots Part 2: Obstacles &amp; Debugging</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To navigate around floor grid obstacles, systematically trace execution steps, and identify and correct bugs when the "Bot" hits a barrier.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Completion of Kidbots Part 1.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">5x5 Floor Grid, Arrow Cards, Obstacle Cones/Cards, Bug cards.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Collision with an obstacle card or stepping outside grid boundaries.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Traces bug in sample code<br>
+                2. <strong>Practicing:</strong> Navigates around 2 obstacles<br>
+                3. <strong>Mastered:</strong> Debugs complex paths with 3+ obstacles independently
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1.4 Rescue Mission: Loops & Subroutines -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat1">
+          <button onclick="toggleTcAccordion('tc-item-4')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">1.4</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">1.4 Rescue Mission: Loops &amp; Subroutines</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 1. Algorithms &amp; Procedures</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-4" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-4" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">1.4 Rescue Mission: Loops &amp; Subroutines</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To optimize long arrow sequences using "Repeat [N] Times" loop cards and reusable subroutine function blocks to reach a rescue target efficiently.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Kidbots Part 2, counting and pattern identification.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Floor grid, Arrow cards, Loop cards (Repeat 2x, 3x, 4x), Function subroutine cards.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Execution count fails to reach target cell or overshoots grid bounds.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Learns loop card notation<br>
+                2. <strong>Practicing:</strong> Shortens 6-card code using 1 loop<br>
+                3. <strong>Mastered:</strong> Constructs multi-loop subroutines independently
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1.5 Conditional Logic & Decision Paths -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat1">
+          <button onclick="toggleTcAccordion('tc-item-5')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">1.5</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">1.5 Conditional Logic &amp; Decision Paths</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 1. Algorithms &amp; Procedures</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-5" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-5" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">1.5 Conditional Logic &amp; Decision Paths</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To program decision paths using IF/THEN/ELSE conditional cards based on grid tile colors or obstacles encountered during traversal.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Basic sequencing and loops.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Color-coded grid tiles, IF/THEN logic cards, direction tokens.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Robot reaches incorrect end node when tile condition color changes.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Observes IF red THEN turn left<br>
+                2. <strong>Practicing:</strong> Executes 2-way conditional path<br>
+                3. <strong>Mastered:</strong> Programs branching decision paths independently
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2.1 Binary Numbers: Dots, Switches & Base-2 -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat2">
+          <button onclick="toggleTcAccordion('tc-item-6')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">2.1</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">2.1 Binary Numbers: Dots, Switches &amp; Base-2</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 2. Data Representation</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-6" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-6" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">2.1 Binary Numbers: Dots, Switches &amp; Base-2</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To construct numbers using binary dot cards (1, 2, 4, 8, 16) and explore Base-2 exponential place values. Connects Base-10 math to digital bit switches.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Base-10 Decimal System (Stamp Game / Golden Beads).</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Set of 5 Binary Dot Cards (1, 2, 4, 8, 16 dots), ON/OFF switch mats.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Sum of visible card dots equals target decimal number.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Flips cards to show numbers 1-15<br>
+                2. <strong>Practicing:</strong> Converts numbers up to 31<br>
+                3. <strong>Mastered:</strong> Mentally converts binary-to-decimal and decimal-to-binary
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2.2 Binary Alphabet & Bead Bracelets -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat2">
+          <button onclick="toggleTcAccordion('tc-item-7')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">2.2</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">2.2 Binary Alphabet &amp; Bead Bracelets</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 2. Data Representation</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-7" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-7" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">2.2 Binary Alphabet &amp; Bead Bracelets</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To translate text letters into 5-bit binary sequences using two bead colors (OFF=0, ON=1) to construct personalized binary name bracelets.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Binary numbers 2.1, fine motor stringing skills.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">5-Bit Alphabet Lookup Key, two bead colors (OFF=0, ON=1), string/pipe cleaner.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Peer successfully decodes bead bracelet back into correct text letters using lookup key.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Encodes initial letter into binary beads<br>
+                2. <strong>Practicing:</strong> Strings 3-letter word bracelet<br>
+                3. <strong>Mastered:</strong> Encodes and decodes full name independently
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2.3 Image Representation (Pixel Art & Bitmaps) -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat2">
+          <button onclick="toggleTcAccordion('tc-item-8')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">2.3</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">2.3 Image Representation (Pixel Art &amp; Bitmaps)</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 2. Data Representation</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-8" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-8" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">2.3 Image Representation (Pixel Art &amp; Bitmaps)</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To fill in grid squares based on binary data strings (0=white, 1=black) to reveal hidden bitmap pixel images and explore how monitors display graphics.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Grid coordinate tracking, basic binary concept.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">8x8 or 10x10 grid sheets, black markers, binary pixel data cards.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Filled grid reveals recognizable pixel image target (e.g., heart, house, star).</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Fills 5x5 pixel grid with guide<br>
+                2. <strong>Practicing:</strong> Decodes 8x8 bitmap string<br>
+                3. <strong>Mastered:</strong> Encodes custom picture into binary code string
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2.4 Data Compression: Run-Length Encoding -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat2">
+          <button onclick="toggleTcAccordion('tc-item-9')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">2.4</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">2.4 Data Compression: Run-Length Encoding</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 2. Data Representation</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-9" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-9" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">2.4 Data Compression: Run-Length Encoding</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To compress bitmap pixel rows using Run-Length Encoding (RLE) count numbers (e.g., "3W, 2B, 3W") to reduce file size without losing information.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Image Representation 2.3.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">RLE challenge sheets, grid paper, compression calculation worksheet.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Reconstructed grid matches target image exactly; total code length is shorter than uncompressed bit count.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Observes line encoding demo<br>
+                2. <strong>Practicing:</strong> Compresses 8x8 image using RLE<br>
+                3. <strong>Mastered:</strong> Calculates compression ratios and decompresses complex images
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2.5 Text & Pattern Compression -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat2">
+          <button onclick="toggleTcAccordion('tc-item-10')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">2.5</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">2.5 Text &amp; Pattern Compression</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 2. Data Representation</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-10" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-10" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">2.5 Text &amp; Pattern Compression</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To compress song lyrics and nursery rhymes by replacing repeating phrases with pointer symbols and dictionary lookup keys (LZW compression).</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Reading fluency, pattern recognition.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Song text sheets, dictionary box templates, colored highlighters.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Substituting dictionary entries back into pointer symbols restores original text completely.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Identifies repeated refrain in text<br>
+                2. <strong>Practicing:</strong> Compresses 4-line poem with dictionary box<br>
+                3. <strong>Mastered:</strong> Maximizes compression ratio on complex passages
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3.1 Parity Magic: Error Detection Matrix -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat3">
+          <button onclick="toggleTcAccordion('tc-item-11')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">3.1</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">3.1 Parity Magic: Error Detection Matrix</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 3. Information Theory &amp; Search</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-11" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-11" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">3.1 Parity Magic: Error Detection Matrix</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To construct a grid of two-sided cards and add parity row/column bits (even count) to instantly detect when a card bit has been flipped.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Even and odd number recognition, grid coordinate tracking.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">36 two-sided black/white cards, grid work mat, parity challenge guide.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">The flipped card is always located at the intersection of the odd row and odd column.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Observes teacher parity magic trick<br>
+                2. <strong>Practicing:</strong> Sets up 4x4 grid parity bits with guide<br>
+                3. <strong>Mastered:</strong> Performs trick independently and explains error detection logic
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3.2 Parity Magic: Checksums & Reliability -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat3">
+          <button onclick="toggleTcAccordion('tc-item-12')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">3.2</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">3.2 Parity Magic: Checksums &amp; Reliability</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 3. Information Theory &amp; Search</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-12" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-12" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">3.2 Parity Magic: Checksums &amp; Reliability</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To calculate checksum digits for data packets and explore how networks detect corrupted data during digital transmission.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Parity Magic 3.1, multi-digit addition.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Data packet cards, checksum calculation worksheets, transmission envelopes.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Summed row/column check digits mismatch data payload when corrupted bit is inserted.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Calculates 1D packet checksums<br>
+                2. <strong>Practicing:</strong> Verifies data packet integrity in network simulation<br>
+                3. <strong>Mastered:</strong> Explores 2D checksums and self-correcting Hamming codes
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3.3 Linear vs. Binary Search -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat3">
+          <button onclick="toggleTcAccordion('tc-item-13')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">3.3</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">3.3 Search Algorithms: Linear vs. Binary Split</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 3. Information Theory &amp; Search</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-13" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-13" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">3.3 Search Algorithms: Linear vs. Binary Split</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To find a target value among ordered cards/cups by comparing sequential checking against splitting remaining search sets in half (Binary search).</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Number ordering (1-30), greater than / less than comparison skills.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">30 ordered number cards or cups, search target token, stopwatch/timer, step logs.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Binary search always isolates target item within a maximum of 5 comparison steps for 30 items.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Watches middle-split demo<br>
+                2. <strong>Practicing:</strong> Executes binary search on 15 cups<br>
+                3. <strong>Mastered:</strong> Logs &amp; explains logarithmic efficiency on large data sets
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3.4 20 Questions & Decision Trees -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat3">
+          <button onclick="toggleTcAccordion('tc-item-14')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">3.4</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">3.4 20 Questions &amp; Decision Trees</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 3. Information Theory &amp; Search</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-14" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-14" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">3.4 20 Questions &amp; Decision Trees</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To construct binary decision trees that classify objects or animals using optimal yes/no questions to minimize search depth and entropy.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Taxonomic classification (Botany/Zoology charts), binary logic.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Animal/plant cards, binary decision tree chart boards, note slips.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Every leaf node leads to a single unique target without classification overlap.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Follows 3-level branching tree<br>
+                2. <strong>Practicing:</strong> Builds 8-item decision tree<br>
+                3. <strong>Mastered:</strong> Optimizes question nodes for balanced tree efficiency
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3.5 Outdoor Sorting Networks -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat3">
+          <button onclick="toggleTcAccordion('tc-item-15')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">3.5</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">3.5 Outdoor Sorting Networks</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 3. Information Theory &amp; Search</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-15" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-15" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">3.5 Outdoor Sorting Networks</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To physically navigate a chalk pavement network, comparing pair values at grid nodes to process parallel sorting algorithms.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Number ordering/comparison, gross motor spatial awareness.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Chalk pavement network lines, numbered cards (1-6) or bead cards.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">All children exit the network arranged in perfect numerical order.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Walks network with guide<br>
+                2. <strong>Practicing:</strong> Navigates 6-person network correctly<br>
+                3. <strong>Mastered:</strong> Explains parallel processing nodes and coaches peers
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3.6 Cryptography & Caesar Cipher Modulo Math -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat3">
+          <button onclick="toggleTcAccordion('tc-item-16')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">3.6</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">3.6 Cryptography &amp; Caesar Cipher Modulo Math</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 3. Information Theory &amp; Search</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-16" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-16" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">3.6 Cryptography &amp; Caesar Cipher Modulo Math</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To encrypt and decrypt secret messages using rotating Caesar cipher wheels and modulo 26 clock arithmetic to explore cybersecurity and private communication.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Modulo/remainder math concept, reading fluency.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Paper Caesar cipher wheels, brass fasteners, message key cards, cipher challenge sheets.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Decoded text produces a meaningful English sentence using the designated key shift.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Operates cipher wheel with teacher guidance<br>
+                2. <strong>Practicing:</strong> Encrypts 3-word secret message with key shift +3<br>
+                3. <strong>Mastered:</strong> Decodes encrypted message and explains modulo 26 wrapping logic
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.1 Capstone Planning & Storyboarding -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat4">
+          <button onclick="toggleTcAccordion('tc-item-17')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">4.1</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">4.1 Capstone Planning &amp; Storyboarding</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 4. Applied Coding &amp; Capstone</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-17" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-17" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">4.1 Capstone Planning &amp; Storyboarding</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To design an interactive Scratch project flowchart and storyboard layout, mapping out sprites, events, and algorithms prior to digital implementation.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">Completion of unplugged trimesters (Algorithms, Data, Info Theory).</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Storyboard planning sheets, colored markers, sprite template cards, flowchart symbol key.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Flowchart logic connects start event to clear end/loop states without unhandled orphan actions.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Reviews sample project storyboard<br>
+                2. <strong>Practicing:</strong> Sketches 3-scene project sequence with sprite triggers<br>
+                3. <strong>Mastered:</strong> Complete pseudocode and interactive flowchart independently prepared
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.2 Digital Interface Setup (Scratch / ScratchJr) -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat4">
+          <button onclick="toggleTcAccordion('tc-item-18')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">4.2</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">4.2 Digital Interface Setup (Scratch / ScratchJr)</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 4. Applied Coding &amp; Capstone</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-18" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-18" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">4.2 Digital Interface Setup (Scratch / ScratchJr)</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To set up Scratch stage environments, custom sprites, backdrops, and coordinate movement (X/Y grid) translating unplugged spatial grid logic to screen.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">4.1 Capstone Planning, basic computer navigation.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Tablets or laptops with Scratch / ScratchJr, printed coordinate grid reference cards.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Sprites align precisely on visual X/Y stage coordinates as designed in storyboard.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Explores Scratch workspace layout and sprite paint editor<br>
+                2. <strong>Practicing:</strong> Imports custom backdrop and positions 2 sprites on X/Y grid<br>
+                3. <strong>Mastered:</strong> Configures complete visual interface ready for script blocks
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.3 Digital Logic: Variables & Conditionals -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat4">
+          <button onclick="toggleTcAccordion('tc-item-19')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">4.3</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">4.3 Digital Logic: Variables &amp; Conditionals</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 4. Applied Coding &amp; Capstone</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-19" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-19" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">4.3 Digital Logic: Variables &amp; Conditionals</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To construct digital block scripts incorporating variables (score, timer) and conditional sensing blocks (IF touching color / sprite THEN perform action).</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">4.2 Digital Interface Setup, Unplugged Conditionals 1.5.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Computers/tablets, Scratch block reference sheets, testing checklists.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Scratch variable updates accurately when conditional collision occurs during play test.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Watches live build of IF/THEN score counter<br>
+                2. <strong>Practicing:</strong> Adds variable score increment to sprite interaction<br>
+                3. <strong>Mastered:</strong> Builds complex multi-conditional script loop with game-over state
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.4 Peer Testing & CS Living Museum Showcase -->
+        <div class="tc-accordion-item border border-slate-200 rounded-xl overflow-hidden transition" data-category="cat4">
+          <button onclick="toggleTcAccordion('tc-item-20')" class="w-full bg-slate-50 hover:bg-emerald-50/50 p-4 text-left flex items-center justify-between transition focus:outline-none">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold">4.4</span>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm md:text-base">4.4 Peer Testing &amp; CS Living Museum Showcase</h3>
+                <span class="text-xs text-slate-500">Sub-Category: 4. Applied Coding &amp; Capstone</span>
+              </div>
+            </div>
+            <i id="icon-tc-item-20" class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+          </button>
+          <div id="tc-item-20" class="hidden p-5 border-t border-slate-200 bg-white grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Lesson Title:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 font-mono mb-3">4.4 Peer Testing &amp; CS Living Museum Showcase</div>
+              <p class="font-bold text-slate-700 mb-1">Description / Direct Aim:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">To conduct peer user testing, document and fix edge-case software bugs, and present interactive projects during a community CS Living Museum showcase.</div>
+              <p class="font-bold text-slate-700 mb-1">Prerequisites:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">4.3 Digital Logic.</div>
+            </div>
+            <div>
+              <p class="font-bold text-slate-700 mb-1">Materials Required:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Finished Scratch capstone projects, peer feedback rubric forms, showcase display stands/mats.</div>
+              <p class="font-bold text-slate-700 mb-1">Control of Error:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed mb-3">Peer play-tester verifies project executes without crash or broken loop logic.</div>
+              <p class="font-bold text-slate-700 mb-1">Assessment Stages:</p>
+              <div class="bg-slate-50 border border-slate-200 rounded p-2.5 text-slate-800 leading-relaxed">
+                1. <strong>Presented:</strong> Conducts structured peer feedback session<br>
+                2. <strong>Practicing:</strong> Identifies and debugs 2 peer-reported code glitches<br>
+                3. <strong>Mastered:</strong> Presents finished interactive project to school community with confidence
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
-      <p>© 2026 Smart Start Montessori • CS Unplugged Educator & Admin Reference Site</p>
-      <p class="text-slate-500">Hosted via GitHub Pages • Designed for Multi-Age Montessori Classrooms (Ages 3–12)</p>
+  <footer class="bg-slate-900 text-slate-400 py-6 border-t border-slate-800 text-xs text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="text-slate-300 font-semibold mb-1">CS Unplugged Educator Portal &bull; Smart Start Montessori School</p>
+      <p>&copy; 2026 CS Unplugged Curriculum Framework. Screen-Free &amp; Applied Digital Learning.</p>
     </div>
   </footer>
 
-  <!-- JavaScript for Tab Switching and Interaction -->
+  <!-- Interactive JavaScript Logic -->
   <script>
-    function switchTab(tabId) { 
-      // Navigate to page
-      window.location.href = `./${tabId}.html`;
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
     }
 
-    function toggleMobileMenu() {
-      const mobileMenu = document.getElementById('mobile-menu');
-      if (mobileMenu) {
-        mobileMenu.classList.toggle('hidden');
+    function toggleTcAccordion(id) {
+      const content = document.getElementById(id);
+      const icon = document.getElementById('icon-' + id);
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        if (icon) icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        if (icon) icon.classList.remove('rotate-180');
       }
+    }
+
+    function filterTcCategory(cat) {
+      const items = document.querySelectorAll('.tc-accordion-item');
+      const buttons = ['all', 'cat1', 'cat2', 'cat3', 'cat4'];
+      
+      buttons.forEach(b => {
+        const btn = document.getElementById('tc-btn-' + b);
+        if (btn) {
+          if (b === cat) {
+            btn.className = "px-3 py-1.5 rounded-lg bg-emerald-800 text-white shadow-sm transition";
+          } else {
+            btn.className = "px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition";
+          }
+        }
+      });
+
+      items.forEach(item => {
+        if (cat === 'all' || item.getAttribute('data-category') === cat) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    function expandAllTcAccordions() {
+      const items = document.querySelectorAll('.tc-accordion-item');
+      items.forEach((item, index) => {
+        if (item.style.display !== 'none') {
+          const id = 'tc-item-' + (index + 1);
+          const content = document.getElementById(id);
+          const icon = document.getElementById('icon-' + id);
+          if (content && content.classList.contains('hidden')) {
+            content.classList.remove('hidden');
+            if (icon) icon.classList.add('rotate-180');
+          }
+        }
+      });
+    }
+
+    function collapseAllTcAccordions() {
+      const items = document.querySelectorAll('.tc-accordion-item');
+      items.forEach((item, index) => {
+        const id = 'tc-item-' + (index + 1);
+        const content = document.getElementById(id);
+        const icon = document.getElementById('icon-' + id);
+        if (content && !content.classList.contains('hidden')) {
+          content.classList.add('hidden');
+          if (icon) icon.classList.remove('rotate-180');
+        }
+      });
     }
   </script>
 
