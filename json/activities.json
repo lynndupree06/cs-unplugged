@@ -27,15 +27,11 @@
         "csUnpluggedLink": "https://csunplugged.org/en/topics/kidbots/",
         "resources": [
             {
-                "title": "Command Card PDF",
-                "url": "#"
-            },
-            {
                 "title": "Lesson Plan",
-                "url": "#"
+                "url": "/resources/Lesson_Plans.pdf#page=1"
             }
         ],
-        "youtubeEmbed": "https://www.youtube.com/watch?v=jBdofnj3KnA",
+        "youtubeEmbed": "https://www.youtube.com/embed/jBdofnj3KnA",
         "imagePlaceholder": "https://placehold.co/600x337/10b981/ffffff?text=Student+Jam+Sandwich+Robot+Demo"
     },
     "w2": {
@@ -66,14 +62,14 @@
         "resources": [
             {
                 "title": "Printable Arrow Cards",
-                "url": "#"
+                "url": "/resources/Kidbots_Command_Cards.pdf"
             },
             {
-                "title": "Grid Layout Guide",
-                "url": "#"
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=2"
             }
         ],
-        "youtubeEmbed": "https://www.youtube.com/watch?v=IfHmHZPxuV8",
+        "youtubeEmbed": "https://www.youtube.com/embed/IfHmHZPxuV8",
         "imagePlaceholder": "https://placehold.co/600x337/047857/ffffff?text=Students+Navigating+Floor+Grid+With+Arrow+Cards"
     },
     "w3": {
@@ -105,9 +101,13 @@
             {
                 "title": "Debugging Log Sheet",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=3"
             }
         ],
-        "youtubeEmbed": "https://www.youtube.com/watch?v=IfHmHZPxuV8",
+        "youtubeEmbed": "",
         "imagePlaceholder": "https://placehold.co/600x337/065f46/ffffff?text=Debugging+Kidbot+Paths+in+Classroom"
     },
     "w4": {
@@ -139,9 +139,13 @@
             {
                 "title": "Loop & Function Cards",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=4"
             }
         ],
-        "youtubeEmbed": "https://www.youtube.com/watch?v=IfHmHZPxuV8",
+        "youtubeEmbed": "",
         "imagePlaceholder": "https://placehold.co/600x337/0f766e/ffffff?text=Rescue+Mission+Loops+And+Functions"
     },
     "w5": {
@@ -173,9 +177,13 @@
             {
                 "title": "Conditional Rules Sheet",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=5"
             }
         ],
-        "youtubeEmbed": "https://www.youtube.com/watch?v=jBdofnj3KnA",
+        "youtubeEmbed": "",
         "imagePlaceholder": "https://placehold.co/600x337/115e59/ffffff?text=Conditional+Logic+Floor+Grid"
     },
     "w6": {
@@ -207,9 +215,13 @@
             {
                 "title": "Printable Binary Dot Cards",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=6"
             }
         ],
-        "youtubeEmbed": "https://www.youtube.com/watch?v=bdYoX332u9I",
+        "youtubeEmbed": "",
         "imagePlaceholder": "https://placehold.co/600x337/134e4a/ffffff?text=Binary+Dot+Cards+Base-2"
     },
     "w7": {
@@ -241,6 +253,10 @@
             {
                 "title": "5-Bit Binary Alphabet Chart",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=7"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=bdYoX332u9I",
@@ -275,6 +291,10 @@
             {
                 "title": "Pixel Art Grid Templates",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=8"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -309,6 +329,10 @@
             {
                 "title": "RLE Compression Worksheets",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=9"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -343,6 +367,10 @@
             {
                 "title": "Text Compression Activity Cards",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=10"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -380,6 +408,10 @@
             {
                 "title": "Parity Magic Guide Sheet",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=11"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -414,6 +446,10 @@
             {
                 "title": "Checksum Calculation Cards",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=12"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -448,6 +484,10 @@
             {
                 "title": "Search Algorithm Log Sheet",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=13"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -482,6 +522,10 @@
             {
                 "title": "Decision Tree Worksheet",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=14"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -516,6 +560,10 @@
             {
                 "title": "Sorting Network Floor Plan PDF",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=15"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -550,6 +598,10 @@
             {
                 "title": "Parallel vs Serial Timing Sheet",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=16"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -588,6 +640,10 @@
             {
                 "title": "Secret Message Worksheets",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=17"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -621,6 +677,10 @@
             {
                 "title": "Clock Arithmetic Worksheets",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=18"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -654,6 +714,10 @@
             {
                 "title": "Storyboard & Flowchart Planner",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=19"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -687,6 +751,10 @@
             {
                 "title": "Interface Setup Guide",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=20"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -720,6 +788,10 @@
             {
                 "title": "Logic Implementation Cheat Sheet",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=21"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -753,6 +825,10 @@
             {
                 "title": "Peer Testing Log Sheet",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=22"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -787,6 +863,10 @@
             {
                 "title": "Showcase Display Card Template",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=23"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",
@@ -821,6 +901,10 @@
             {
                 "title": "Showcase Certificate Template",
                 "url": "#"
+            },
+            {
+                "title": "Lesson Plan",
+                "url": "/resources/Lesson_Plans.pdf#page=24"
             }
         ],
         "youtubeEmbed": "https://www.youtube.com/watch?v=K3S7X_fVb6E",

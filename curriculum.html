@@ -778,6 +778,7 @@
           data.resources.forEach(res => {
             const a = document.createElement('a');
             a.href = res.url;
+            a.target = "_blank";
             a.className = "text-xs text-slate-600 hover:text-emerald-700 bg-slate-100 px-2.5 py-1.5 rounded-md border border-slate-200 transition font-medium";
             a.innerHTML = `<i class="fa-solid fa-file-pdf mr-1 text-red-500"></i> ${res.title}`;
             resourcesContainer.appendChild(a);
